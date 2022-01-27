@@ -48,3 +48,14 @@ The following packages were updated:
   com.unity.cinemachine from version 2.6.3 to 2.6.11
   com.unity.inputsystem from version 1.0.2 to 1.2.0
   com.unity.render-pipelines.high-definition from version 10.8.0 to 10.8.1
+
+=== Thu Jan 27 20:25:33 2022
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.ads@2.0.8
+  com.unity.analytics@2.0.16
+  com.unity.package-manager-ui@1.9.11
+  com.unity.purchasing@2.0.3
