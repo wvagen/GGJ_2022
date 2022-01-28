@@ -7,10 +7,15 @@ public class MyPlayer : MonoBehaviour
     public MyManager man;
     public GameObject player;
 
+    public GameObject explosionEffect;
+    public GameObject fireEffect;
+
+    public Material allThePlaceMat;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        allThePlaceMat.color = Color.white;
     }
 
     // Update is called once per frame
@@ -42,4 +47,18 @@ public class MyPlayer : MonoBehaviour
             }
         }
     }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "Obstacle")
+        {
+            Debug.Log("LOST HERE");
+            Destroy(Instantiate(explosionEffect, transform.position, Quaternion.identity), 3);
+            Instantiate(fireEffect, transform.position, Quaternion.identity);
+            allThePlaceMat.color = Color.black;
+            transform.Rotate(Vector3.forward * 90);
+            gameObject.SetActive(false);
+        }
+    }
+
 }

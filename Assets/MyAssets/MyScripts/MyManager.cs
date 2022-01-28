@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class MyManager : MonoBehaviour
 {
-
     public GameObject[] rowOneObstacles;
+    public GameObject[] rowTwoObstacles;
 
     public Transform[] spawnPositions;
 
@@ -73,7 +73,13 @@ public class MyManager : MonoBehaviour
             if (customizedTime > timeMoments[timeMomentIndex])
             {
                 //Spawn Obstacles Behaviour here
-                Spawn_Row_One_Obstacle();
+
+                if (Random.Range(0, 2) % 2 == 0)
+                    Spawn_Row_One_Obstacle();
+                else
+                    Spawn_Row_Two_Obstacle();
+
+
                 timeMomentIndex++;
 
                 if (timeMomentIndex >= timeMoments.Count)
@@ -87,10 +93,30 @@ public class MyManager : MonoBehaviour
 
     void Spawn_Row_One_Obstacle()
     {
-        MyElement element = Instantiate(rowOneObstacles[Random.Range(0, rowOneObstacles.Length)],
-            parent : spawnPositions[Random.Range(0, spawnPositions.Length)]).GetComponent<MyElement>();
-        element.Set_Me_Up(elementSpeed);
+        byte randomSideA = (byte) Random.Range(0, spawnPositions.Length);
+        byte randomSideB;
 
+        do
+        {
+            randomSideB = (byte)Random.Range(0, spawnPositions.Length);
+        } while (randomSideB == randomSideA);
+
+        for (int i = 0; i < 2; i++)
+        {
+            MyElement element = Instantiate(rowOneObstacles[Random.Range(0, rowOneObstacles.Length)],
+                parent: spawnPositions[i % 2 == 0 ? randomSideA : randomSideB]).GetComponent<MyElement>();
+            element.Set_Me_Up(elementSpeed);
+        }
+    }
+
+    void Spawn_Row_Two_Obstacle()
+    {
+        byte randomSide = (byte) (Random.Range(0, 2) % 2 == 0 ? 0 : 2);
+
+
+            MyElement element = Instantiate(rowTwoObstacles[Random.Range(0, rowTwoObstacles.Length)],
+                parent: spawnPositions[randomSide]).GetComponent<MyElement>();
+            element.Set_Me_Up(elementSpeed);
     }
 
     void Rotate_Tapis_Texture_Speed()
