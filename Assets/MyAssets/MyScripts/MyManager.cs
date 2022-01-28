@@ -19,7 +19,8 @@ public class MyManager : MonoBehaviour
 
     public Renderer tapisRendererMat;
 
-    public TextAsset recordedMomentsTxtFile;
+    public TextAsset recordedObstaclesMomentsTxtFile;
+    public TextAsset recordedBlakaMomentsTxtFile;
 
     public MyCameraFollow camFollow;
 
@@ -29,17 +30,21 @@ public class MyManager : MonoBehaviour
     public float tapisRotationSpeed = 50;
     public float SNAP_HORIZONTAL = 0.25f;
 
-    public List<float> timeMoments = new List<float>();
+    public List<float> timeMomentsObstacles = new List<float>();
+    public List<float> timeMomentsBlaka = new List<float>();
 
     public static bool isGameRunning = true;
 
-    int timeMomentIndex = 0;
+    int timeMomentObstacleIndex = 0;
+    int timeMomentBlakaIndex = 0;
 
     float customizedTime = 0;
     float elementSpeed = 2;
 
     bool isWin = false;
     bool isSwitchingTo3D = false;
+
+    bool canSawpObstacle = true;
 
     const float MARGIN_OF_TWO_ROWS_OBST = 0.16f;
 
@@ -53,6 +58,12 @@ public class MyManager : MonoBehaviour
     {
         Rotate_Tapis_Texture_Speed();
         Spawn_Obstacle();
+        Spawn_Blaka();
+
+        if (isGameRunning)
+        {
+            customizedTime += Time.deltaTime;
+        }
 
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -62,46 +73,80 @@ public class MyManager : MonoBehaviour
 
     IEnumerator Start_Game()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1.5f);
         myAudioSource.enabled = true;
     }
 
     void ExtractMomentsFromFile()
     {
-        StreamReader reader = new StreamReader(new MemoryStream(recordedMomentsTxtFile.bytes));
+        StreamReader reader = new StreamReader(new MemoryStream(recordedObstaclesMomentsTxtFile.bytes));
         string line = "";
         do
         {
             line = reader.ReadLine();
             if (line != null)
-                timeMoments.Add(float.Parse(line));
+                timeMomentsObstacles.Add(float.Parse(line));
         } while (line != null);
+
+        reader = new StreamReader(new MemoryStream(recordedBlakaMomentsTxtFile.bytes));
+        line = "";
+        do
+        {
+            line = reader.ReadLine();
+            if (line != null)
+                timeMomentsBlaka.Add(float.Parse(line));
+        } while (line != null);
+
     }
 
     void Spawn_Obstacle()
     {
-        if (isGameRunning && !isWin) {
-            customizedTime += Time.deltaTime;
-            if (customizedTime > timeMoments[timeMomentIndex])
+        if (isGameRunning && timeMomentObstacleIndex < timeMomentsObstacles.Count && !isWin) {
+            if (customizedTime > timeMomentsObstacles[timeMomentObstacleIndex])
             {
                 //Spawn Obstacles Behaviour here
 
-                //if (Random.Range(0, 2) % 2 == 0)
-                  //  Spawn_Row_One_Obstacle();
-               //else
-                  //  Spawn_Row_Two_Obstacle();
 
-                Spawn_Balka();
+                if (canSawpObstacle)
+                {
+                    if (Random.Range(0, 2) % 2 == 0)
+                        Spawn_Row_One_Obstacle();
+                    else
+                        Spawn_Row_Two_Obstacle();
+                }
 
-                timeMomentIndex++;
+                timeMomentObstacleIndex++;
 
-                if (timeMomentIndex >= timeMoments.Count)
+                if (timeMomentObstacleIndex >= timeMomentsObstacles.Count)
                 {
                     //Win Behaviour
-                    isWin = true;
+                    //isWin = true;
                 }
             }
         }
+    }
+
+    void Spawn_Blaka()
+    {
+        if (isGameRunning && !isWin)
+        {
+            if (customizedTime > timeMomentsBlaka[timeMomentBlakaIndex])
+            {
+                //Spawn Blaka Behaviour here
+
+                Spawn_Balka();
+                StartCoroutine(Sleep_Time_Between_Blayek());
+
+                timeMomentBlakaIndex++;
+            }
+        }
+    }
+
+    IEnumerator Sleep_Time_Between_Blayek()
+    {
+        canSawpObstacle = false;
+        yield return new WaitForSeconds(1);
+        canSawpObstacle = true;
     }
 
     void Spawn_Row_One_Obstacle()
