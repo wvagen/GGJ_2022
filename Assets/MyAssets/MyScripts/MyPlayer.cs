@@ -7,8 +7,6 @@ public class MyPlayer : MonoBehaviour
     public MyManager man;
     public GameObject player;
 
-    public float SNAP_HORIZONTAL = 0.22f;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -36,11 +34,11 @@ public class MyPlayer : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
-                player.transform.position += Vector3.left * SNAP_HORIZONTAL;
+                player.transform.position += Vector3.left * man.SNAP_HORIZONTAL;
             }
             else if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
-                player.transform.position += Vector3.right * SNAP_HORIZONTAL;
+                player.transform.position += Vector3.right * man.SNAP_HORIZONTAL;
             }
         }
     }
