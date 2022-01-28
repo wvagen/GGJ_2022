@@ -12,6 +12,8 @@ public class MyPlayer : MonoBehaviour
 
     public Material allThePlaceMat;
 
+    int playerPosIndex = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,13 +39,15 @@ public class MyPlayer : MonoBehaviour
     {
         if (MyManager.isGameRunning)
         {
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (Input.GetKeyDown(KeyCode.RightArrow) && playerPosIndex < 1)
             {
                 player.transform.position += Vector3.left * man.SNAP_HORIZONTAL;
+                playerPosIndex++;
             }
-            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            else if (Input.GetKeyDown(KeyCode.LeftArrow) && playerPosIndex > -1)
             {
                 player.transform.position += Vector3.right * man.SNAP_HORIZONTAL;
+                playerPosIndex--;
             }
         }
     }

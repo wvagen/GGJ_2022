@@ -8,14 +8,17 @@ public class MyElement : MonoBehaviour
 
     bool isGrounded = false;
     float mySpeed = 0;
+    float margin;
 
-    public void Set_Me_Up(float speed)
+    public void Set_Me_Up(float speed, float margin)
     {
         mySpeed = speed;
+        this.margin = margin;
     }
 
     private void Start()
     {
+        transform.position += Vector3.right * margin;
         Destroy(this.gameObject, 5);
     }
 

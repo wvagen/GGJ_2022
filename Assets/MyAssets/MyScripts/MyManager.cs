@@ -18,7 +18,7 @@ public class MyManager : MonoBehaviour
     public TextAsset recordedMomentsTxtFile;
 
     public float tapisRotationSpeed = 50;
-    public float SNAP_HORIZONTAL = 0.22f;
+    public float SNAP_HORIZONTAL = 0.25f;
 
     public List<float> timeMoments = new List<float>();
 
@@ -30,6 +30,8 @@ public class MyManager : MonoBehaviour
     float elementSpeed = 2;
 
     bool isWin = false;
+
+    const float MARGIN_OF_TWO_ROWS_OBST = 0.16f;
 
     void Start()
     {
@@ -105,7 +107,7 @@ public class MyManager : MonoBehaviour
         {
             MyElement element = Instantiate(rowOneObstacles[Random.Range(0, rowOneObstacles.Length)],
                 parent: spawnPositions[i % 2 == 0 ? randomSideA : randomSideB]).GetComponent<MyElement>();
-            element.Set_Me_Up(elementSpeed);
+            element.Set_Me_Up(elementSpeed,0);
         }
     }
 
@@ -116,7 +118,7 @@ public class MyManager : MonoBehaviour
 
             MyElement element = Instantiate(rowTwoObstacles[Random.Range(0, rowTwoObstacles.Length)],
                 parent: spawnPositions[randomSide]).GetComponent<MyElement>();
-            element.Set_Me_Up(elementSpeed);
+            element.Set_Me_Up(elementSpeed, randomSide == 0 ? -MARGIN_OF_TWO_ROWS_OBST : MARGIN_OF_TWO_ROWS_OBST);
     }
 
     void Rotate_Tapis_Texture_Speed()
