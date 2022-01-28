@@ -8,6 +8,7 @@ TagManager:
   - CubeRed
   - Ground
   - Obstacle
+  - Switch_2D_3D
   layers:
   - Default
   - TransparentFX

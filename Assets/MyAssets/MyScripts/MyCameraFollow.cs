@@ -17,4 +17,5 @@ public class MyCameraFollow : MonoBehaviour
         transform.position = smoothPosition;
         transform.LookAt(target);
     }
+
 }

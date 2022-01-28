@@ -65,4 +65,13 @@ public class MyPlayer : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Switch_2D_3D")
+        {
+            Destroy(other.transform.parent.gameObject);
+            man.Switch_2D_3D();
+        }
+    }
+
 }
