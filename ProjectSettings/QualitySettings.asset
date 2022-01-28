@@ -134,7 +134,8 @@ QualitySettings:
     asyncUploadBufferSize: 4
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    customRenderPipeline: {fileID: 0}
+    customRenderPipeline: {fileID: 11400000, guid: 36dd385e759c96147b6463dcd1149c11,
+      type: 2}
     excludedTargetPlatforms:
     - PS4
     - XboxOne
