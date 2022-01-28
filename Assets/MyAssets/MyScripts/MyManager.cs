@@ -15,6 +15,10 @@ public class MyManager : MonoBehaviour
 
     public Transform[] spawnPositions;
 
+    public Transform rightHandOfCharacter;
+
+    public Animator characterAnim;
+
     public AudioSource myAudioSource;
 
     public Renderer tapisRendererMat;
@@ -109,6 +113,9 @@ public class MyManager : MonoBehaviour
 
                 if (canSawpObstacle)
                 {
+
+                    characterAnim.Play("Pick_Up_Anim", -1, 0);
+
                     if (Random.Range(0, 2) % 2 == 0)
                         Spawn_Row_One_Obstacle();
                     else
@@ -153,6 +160,7 @@ public class MyManager : MonoBehaviour
     {
         byte randomSideA = (byte) Random.Range(0, spawnPositions.Length);
         byte randomSideB;
+        byte randomElementIndex = (byte) Random.Range(0, rowOneObstacles.Length);
 
         do
         {
@@ -161,20 +169,33 @@ public class MyManager : MonoBehaviour
 
         for (int i = 0; i < 2; i++)
         {
-            MyElement element = Instantiate(rowOneObstacles[Random.Range(0, rowOneObstacles.Length)],
+            MyElement element = Instantiate(rowOneObstacles[randomElementIndex],
                 parent: spawnPositions[i % 2 == 0 ? randomSideA : randomSideB]).GetComponent<MyElement>();
             element.Set_Me_Up(elementSpeed,0);
         }
+
+        GameObject obj = Instantiate(rowOneObstacles[randomElementIndex],
+                parent: rightHandOfCharacter);
+        obj.GetComponent<Rigidbody>().isKinematic = true;
+
+        Destroy(obj, 0.5f);
+
     }
 
     void Spawn_Row_Two_Obstacle()
     {
         byte randomSide = (byte) (Random.Range(0, 2) % 2 == 0 ? 0 : 2);
+        byte randomElementIndex = (byte)Random.Range(0, rowTwoObstacles.Length);
 
-
-            MyElement element = Instantiate(rowTwoObstacles[Random.Range(0, rowTwoObstacles.Length)],
+            MyElement element = Instantiate(rowTwoObstacles[randomElementIndex],
                 parent: spawnPositions[randomSide]).GetComponent<MyElement>();
             element.Set_Me_Up(elementSpeed, randomSide == 0 ? -MARGIN_OF_TWO_ROWS_OBST : MARGIN_OF_TWO_ROWS_OBST);
+
+        GameObject obj = Instantiate(rowTwoObstacles[randomElementIndex],
+                parent: rightHandOfCharacter);
+        obj.GetComponent<Rigidbody>().isKinematic = true;
+
+        Destroy(obj, 0.5f);
     }
 
     void Spawn_Balka()
