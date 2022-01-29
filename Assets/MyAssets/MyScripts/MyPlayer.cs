@@ -56,7 +56,6 @@ public class MyPlayer : MonoBehaviour
     {
         if (other.gameObject.tag == "Obstacle")
         {
-            Debug.Log("LOST HERE");
             Destroy(Instantiate(explosionEffect, transform.position, Quaternion.identity), 3);
             Instantiate(fireEffect, transform.position, Quaternion.identity);
             allThePlaceMat.color = Color.black;

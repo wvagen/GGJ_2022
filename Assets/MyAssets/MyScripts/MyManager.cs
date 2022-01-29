@@ -23,7 +23,7 @@ public class MyManager : MonoBehaviour
 
     public Transform rightHandOfCharacter;
 
-    public Animator characterAnim;
+    public Animator characterAnim, caissiereAnim;
 
     public AudioSource myAudioSource;
 
@@ -293,6 +293,8 @@ public class MyManager : MonoBehaviour
     public void Lose()
     {
         alertCanvas.Lose();
+        characterAnim.Play("Death_Anim");
+        caissiereAnim.Play("Death_Anim");
         isGameRunning = false;
     }
 

@@ -20,7 +20,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &446902471
 RectTransform:
   m_ObjectHideFlags: 0
@@ -574,6 +574,7 @@ RectTransform:
   - {fileID: 6734496702785701991}
   - {fileID: 7066531374606305328}
   - {fileID: 446902471}
+  - {fileID: 5494172594811647097}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -666,6 +667,7 @@ MonoBehaviour:
   hoverBtnSFX: {fileID: 8300000, guid: 1993d8066a2274c3aa1a68519deaf994, type: 3}
   musicSfxSwitch: {fileID: 8300000, guid: 843cfac969de8c24eb6f053c56487d8f, type: 3}
   winSFX: {fileID: 8300000, guid: 1195bc7667e5c4a3693c41764cfd0dc6, type: 3}
+  lossSFX: {fileID: 8300000, guid: b9c04022809f748cf90fd97cbebec9c2, type: 3}
   loserStrings:
   - My young brother aged 5 did it first time
   - Are you playing with your foot fingers ?
@@ -674,6 +676,8 @@ MonoBehaviour:
   - Pathetic ...
   musicImg: {fileID: 2579675535177853975}
   sfxImg: {fileID: 2579675535890779100}
+  loadingFillableImg: {fileID: 3416751020490332571}
+  blockingImg: {fileID: 10521998580900099}
   musicBtnOnSprite: {fileID: 21300000, guid: bdaaff77170314ef5937df4254cc09db, type: 3}
   musicBtnOffSprite: {fileID: 21300000, guid: 9fab1f462132d44398536dffa1c59e2a, type: 3}
 --- !u!95 &6872550089188941123
@@ -803,6 +807,7 @@ GameObject:
   - component: {fileID: 2395162133438028264}
   - component: {fileID: 985562434135075422}
   - component: {fileID: 3313500002432791548}
+  - component: {fileID: 2010479883008336319}
   m_Layer: 5
   m_Name: Button_Retry
   m_TagString: Untagged
@@ -910,7 +915,64 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 985562434135075422}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6903566468192886844}
+        m_TargetAssemblyTypeName: MyAlertCanvas, Assembly-CSharp
+        m_MethodName: Retry
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2010479883008336319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369807413697896381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6903566468192886844}
+          m_TargetAssemblyTypeName: MyAlertCanvas, Assembly-CSharp
+          m_MethodName: Hover_Btn
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 369807413697896381}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6903566468192886844}
+          m_TargetAssemblyTypeName: MyAlertCanvas, Assembly-CSharp
+          m_MethodName: UnHover_Btn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &424008760377345283
 GameObject:
   m_ObjectHideFlags: 0
@@ -2637,6 +2699,81 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1601923359479846031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5494172594811647097}
+  - component: {fileID: 6304237825267500714}
+  - component: {fileID: 3416751020490332571}
+  m_Layer: 5
+  m_Name: FillableImg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &5494172594811647097
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601923359479846031}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 10521998949144452}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6304237825267500714
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601923359479846031}
+  m_CullTransparentMesh: 0
+--- !u!114 &3416751020490332571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601923359479846031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 6df6fb259252c4c70b48b1eeffd25f89, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1930590519394484075
 GameObject:
   m_ObjectHideFlags: 0
@@ -3873,6 +4010,7 @@ GameObject:
   - component: {fileID: 2126375688873734682}
   - component: {fileID: 3250866850644180653}
   - component: {fileID: 5335226593324034984}
+  - component: {fileID: 8540693924550425762}
   m_Layer: 5
   m_Name: Button_Home
   m_TagString: Untagged
@@ -3981,6 +4119,51 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8540693924550425762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2941881417209443165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6903566468192886844}
+          m_TargetAssemblyTypeName: MyAlertCanvas, Assembly-CSharp
+          m_MethodName: Hover_Btn
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2941881417209443165}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6903566468192886844}
+          m_TargetAssemblyTypeName: MyAlertCanvas, Assembly-CSharp
+          m_MethodName: UnHover_Btn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &3784571583523388162
 GameObject:
   m_ObjectHideFlags: 0
@@ -4823,6 +5006,7 @@ GameObject:
   - component: {fileID: 6734496701045189864}
   - component: {fileID: 6734496701045189865}
   - component: {fileID: 6734496701045189866}
+  - component: {fileID: 9204421771464320336}
   m_Layer: 5
   m_Name: Button_Next
   m_TagString: Untagged
@@ -4931,6 +5115,51 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &9204421771464320336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6734496701045189844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6903566468192886844}
+          m_TargetAssemblyTypeName: MyAlertCanvas, Assembly-CSharp
+          m_MethodName: Hover_Btn
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 6734496701045189844}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6903566468192886844}
+          m_TargetAssemblyTypeName: MyAlertCanvas, Assembly-CSharp
+          m_MethodName: UnHover_Btn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &6734496701325488188
 GameObject:
   m_ObjectHideFlags: 0
@@ -4943,6 +5172,7 @@ GameObject:
   - component: {fileID: 6734496701325488176}
   - component: {fileID: 6734496701325488177}
   - component: {fileID: 6734496701325488178}
+  - component: {fileID: 1659968671370963022}
   m_Layer: 5
   m_Name: Button_Retry
   m_TagString: Untagged
@@ -5050,7 +5280,64 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6734496701325488177}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6903566468192886844}
+        m_TargetAssemblyTypeName: MyAlertCanvas, Assembly-CSharp
+        m_MethodName: Retry
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1659968671370963022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6734496701325488188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6903566468192886844}
+          m_TargetAssemblyTypeName: MyAlertCanvas, Assembly-CSharp
+          m_MethodName: Hover_Btn
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 6734496701325488188}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6903566468192886844}
+          m_TargetAssemblyTypeName: MyAlertCanvas, Assembly-CSharp
+          m_MethodName: UnHover_Btn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &6734496701514577907
 GameObject:
   m_ObjectHideFlags: 0
@@ -5221,6 +5508,7 @@ GameObject:
   - component: {fileID: 6734496702263024476}
   - component: {fileID: 6734496702263024477}
   - component: {fileID: 6734496702263024478}
+  - component: {fileID: 1300350160420075172}
   m_Layer: 5
   m_Name: Button_Home
   m_TagString: Untagged
@@ -5329,6 +5617,51 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1300350160420075172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6734496702263024472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6903566468192886844}
+          m_TargetAssemblyTypeName: MyAlertCanvas, Assembly-CSharp
+          m_MethodName: Hover_Btn
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 6734496702263024472}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6903566468192886844}
+          m_TargetAssemblyTypeName: MyAlertCanvas, Assembly-CSharp
+          m_MethodName: UnHover_Btn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &6734496702785701984
 GameObject:
   m_ObjectHideFlags: 0
