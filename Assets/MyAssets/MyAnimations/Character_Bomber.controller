@@ -78,7 +78,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 7919428539056754510}
+  m_DefaultState: {fileID: 6235730439694154772}
 --- !u!1102 &6235730439694154772
 AnimatorState:
   serializedVersion: 6
@@ -138,7 +138,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SneakyPeeky
+  m_Name: PlaceABomb
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -151,7 +151,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 11373f2445f3e4329a8403d392906c91, type: 2}
+  m_Motion: {fileID: 7400000, guid: 9b3ea8162e103407098df3bc08d08069, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
