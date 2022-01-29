@@ -3102,10 +3102,10 @@ RectTransform:
   m_Father: {fileID: 7324113143432974820}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 114.3218}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 9.293701}
+  m_SizeDelta: {x: 411.1231, y: 95.7344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &741414355646654801
 CanvasRenderer:
@@ -3141,14 +3141,14 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 66
+    m_MaxSize: 60
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Alert
+  m_Text: 
 --- !u!114 &529056516870312379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3161,8 +3161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 2.57, y: -4.37}
+  m_EffectColor: {r: 0.4056604, g: 0.16519704, b: 0.009567461, a: 0.5}
+  m_EffectDistance: {x: 3.77, y: -5.53}
   m_UseGraphicAlpha: 1
 --- !u!1 &5553363341133538837
 GameObject:
@@ -3243,7 +3243,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Test
+  m_Text: 
 --- !u!114 &3548481443185229446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3424,7 +3424,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2727008876557997490}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6903566468192886844}
+        m_TargetAssemblyTypeName: MyAlertCanvas, Assembly-CSharp
+        m_MethodName: Resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8872610859953066381
 GameObject:
   m_ObjectHideFlags: 0

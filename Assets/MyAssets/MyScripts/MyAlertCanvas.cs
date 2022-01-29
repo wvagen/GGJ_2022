@@ -27,6 +27,7 @@ public class MyAlertCanvas : MonoBehaviour
     private void Start()
     {
         SoundsStats();
+        Time.timeScale = 1;
     }
 
     public void Display_Alert(string title,string msg)

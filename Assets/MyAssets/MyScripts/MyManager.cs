@@ -7,6 +7,9 @@ using UnityEngine.Playables;
 
 public class MyManager : MonoBehaviour
 {
+
+    public MyAlertCanvas alertCanvas;
+
     public GameObject[] rowOneObstacles;
     public GameObject[] rowTwoObstacles;
 
@@ -45,6 +48,17 @@ public class MyManager : MonoBehaviour
     public static bool isGameRunning = true;
     public static bool isFirstTime = true;
 
+    //Tutorial Stuff
+
+    public string tuto_phrase_0;
+    public string tuto_phrase_1;
+    public string tuto_phrase_2;
+    public string tuto_phrase_3;
+    public string tuto_phrase_4;
+    public string tuto_phrase_5;
+
+    //Tuto Stuff End
+
     int timeMomentObstacleIndex = 0;
     int timeMomentBlakaIndex = 0;
 
@@ -58,19 +72,26 @@ public class MyManager : MonoBehaviour
 
     const float MARGIN_OF_TWO_ROWS_OBST = 0.16f;
 
-    private void Awake()
+    bool framesSkippedIntro = false;
+
+    void Start()
     {
         if (isFirstTime)
         {
             isGameRunning = false;
-            director.stopped += TimeLine_Stopped;
             director.Play();
+            StartCoroutine(Skip_Frame());
+        }
+        else
+        {
+            Start_Stuff();
         }
     }
 
-    void Start()
+    IEnumerator Skip_Frame()
     {
-        Start_Stuff();
+        yield return new WaitForSeconds(10);
+        framesSkippedIntro = true;
     }
 
     void Start_Stuff()
@@ -84,10 +105,86 @@ public class MyManager : MonoBehaviour
         }
     }
 
-    void TimeLine_Stopped(PlayableDirector obj)
+    void TimeLine_Stopped()
     {
+        if (PlayerPrefs.GetInt("tutorial", 0) == 0)
+        {
+            Start_Tutorial();
+        }
+        else
+        {
+            isGameRunning = true;
+            Start_Stuff();
+        }
+    }
+
+    void Start_Tutorial()
+    {
+        StartCoroutine(Tutorial_Stuff());
+    }
+
+    IEnumerator Tutorial_Stuff()
+    {
+        yield return new WaitForSeconds(2);
+
+        alertCanvas.Display_Alert("Tutorial", tuto_phrase_0);
+        Time.timeScale = 0.1f;
+
+        while (Time.timeScale < 0.9f) yield return new WaitForEndOfFrame();
+
+        yield return new WaitForSeconds(2);
+
+        alertCanvas.Display_Alert("Tutorial", tuto_phrase_1);
+        Time.timeScale = 0.1f;
+
+        while (Time.timeScale < 0.9f) yield return new WaitForEndOfFrame();
+
+        yield return new WaitForSeconds(2);
+
+        Spawn_Row_Two_Obstacle();
+
+        alertCanvas.Display_Alert("Tutorial", tuto_phrase_2);
+        Time.timeScale = 0.1f;
+
+        while (Time.timeScale < 0.9f) yield return new WaitForEndOfFrame();
+
+        yield return new WaitForSeconds(3);
+
+        Spawn_Balka();
+
+        alertCanvas.Display_Alert("Tutorial", tuto_phrase_3);
+        Time.timeScale = 0.1f;
+
+        while (Time.timeScale < 0.9f) yield return new WaitForEndOfFrame();
+
+        yield return new WaitForSeconds(3);
+
+        alertCanvas.Display_Alert("Tutorial", tuto_phrase_4);
+        Time.timeScale = 0.1f;
+
+        while (Time.timeScale < 0.9f) yield return new WaitForEndOfFrame();
+
+        Spawn_Row_Two_Obstacle();
+        yield return new WaitForSeconds(1);
+        Spawn_Row_One_Obstacle();
+
+        yield return new WaitForSeconds(1);
+
+
+        Spawn_Balka();
+
+        yield return new WaitForSeconds(2);
+
+        alertCanvas.Display_Alert("Tutorial", tuto_phrase_5);
+        Time.timeScale = 0.1f;
+
+        while (Time.timeScale < 0.9f) yield return new WaitForEndOfFrame();
+
+        PlayerPrefs.SetInt("tutorial", 1);
+
         isGameRunning = true;
         Start_Stuff();
+
     }
 
     private void Update()
@@ -99,6 +196,12 @@ public class MyManager : MonoBehaviour
         if (isGameRunning)
         {
             customizedTime += Time.deltaTime;
+        }
+
+        if (framesSkippedIntro)
+        {
+            framesSkippedIntro = false;
+            TimeLine_Stopped();
         }
 
         if (Input.GetKeyDown(KeyCode.R))
