@@ -20,6 +20,7 @@ public class MyManager : MonoBehaviour
     public GameObject cam3D, cam2D;
 
     public GameObject doubleBars;
+    public GameObject panel2D_3D;
 
     public Transform[] spawnPositions;
 
@@ -86,7 +87,7 @@ public class MyManager : MonoBehaviour
     void Start()
     {
         isGameRunning = true;
-
+        panel2D_3D.SetActive(true);
         if (isFirstTime)
         {
             isGameRunning = false;
@@ -400,7 +401,10 @@ public class MyManager : MonoBehaviour
         {
             camFollow.offset = camOffset2D;
         }
+
         StartCoroutine(Switch_CAMS());
+
+        alertCanvas.myAnim.SetBool("is3D", isSwitchingTo3D);
         isSwitchingTo3D = !isSwitchingTo3D;
     }
 
