@@ -146,14 +146,21 @@ public class MyAlertCanvas : MonoBehaviour
         if (sfxOn)
             myAudioSource.PlayOneShot(lossSFX);
 
-        if (lostTxtIndex < loserStrings.Length)
+        if (MyManager.isTutorialRunning)
         {
-            loserTxt.text = loserStrings[lostTxtIndex];
-            lostTxtIndex++;
+            loserTxt.text = "Bruh.. We're still in tutorial ...";
         }
         else
         {
-            loserTxt.text = loserStrings[Random.Range(0, loserStrings.Length)];
+            if (lostTxtIndex < loserStrings.Length)
+            {
+                loserTxt.text = loserStrings[lostTxtIndex];
+                lostTxtIndex++;
+            }
+            else
+            {
+                loserTxt.text = loserStrings[Random.Range(0, loserStrings.Length)];
+            }
         }
     }
 

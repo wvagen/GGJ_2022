@@ -19,6 +19,8 @@ public class MyManager : MonoBehaviour
 
     public GameObject cam3D, cam2D;
 
+    public GameObject doubleBars;
+
     public Transform[] spawnPositions;
 
     public Transform rightHandOfCharacter;
@@ -50,7 +52,7 @@ public class MyManager : MonoBehaviour
     public static int levelIndex = 0;
 
     public static bool isGameRunning = true;
-    public static bool isFirstTime = false;
+    public static bool isFirstTime = true;
     public static bool isTutorialRunning = false;
 
     //Tutorial Stuff
@@ -78,6 +80,8 @@ public class MyManager : MonoBehaviour
     const float MARGIN_OF_TWO_ROWS_OBST = 0.16f;
 
     bool framesSkippedIntro = false;
+
+    Coroutine tutoCor;
 
     void Start()
     {
@@ -119,6 +123,7 @@ public class MyManager : MonoBehaviour
 
     void TimeLine_Stopped()
     {
+        doubleBars.SetActive(false);
         if (PlayerPrefs.GetInt("tutorial", 0) == 0)
         {
             Start_Tutorial();
@@ -134,7 +139,7 @@ public class MyManager : MonoBehaviour
 
     void Start_Tutorial()
     {
-        StartCoroutine(Tutorial_Stuff());
+        tutoCor = StartCoroutine(Tutorial_Stuff());
     }
 
     IEnumerator Tutorial_Stuff()
@@ -199,6 +204,7 @@ public class MyManager : MonoBehaviour
 
         isGameRunning = true;
         isTutorialRunning = false;
+        isFirstTime = false;
         Start_Stuff();
 
     }
@@ -293,6 +299,7 @@ public class MyManager : MonoBehaviour
     public void Lose()
     {
         alertCanvas.Lose();
+        if (isTutorialRunning) StopCoroutine(tutoCor);
         characterAnim.Play("Death_Anim");
         caissiereAnim.Play("Death_Anim");
         isGameRunning = false;
