@@ -29,7 +29,7 @@ public class MyPlayer : MonoBehaviour
 
     void Rotate()
     {
-        if (MyManager.isGameRunning)
+        if (MyManager.isGameRunning || MyManager.isTutorialRunning)
         {
             transform.Rotate(Vector3.left * man.tapisRotationSpeed * 10 * Time.deltaTime);
         }
@@ -37,7 +37,7 @@ public class MyPlayer : MonoBehaviour
 
     void Shift()
     {
-        if (MyManager.isGameRunning)
+        if (MyManager.isGameRunning || MyManager.isTutorialRunning)
         {
             if (Input.GetKeyDown(KeyCode.RightArrow) && playerPosIndex < 1)
             {

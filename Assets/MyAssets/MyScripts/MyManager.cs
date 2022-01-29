@@ -29,8 +29,10 @@ public class MyManager : MonoBehaviour
 
     public Renderer tapisRendererMat;
 
-    public TextAsset recordedObstaclesMomentsTxtFile;
-    public TextAsset recordedBlakaMomentsTxtFile;
+    public AudioClip[] musicLevels;
+
+    public TextAsset[] recordedObstaclesMomentsTxtFiles;
+    public TextAsset[] recordedBlakaMomentsTxtFiles;
 
     public MyCameraFollow camFollow;
 
@@ -45,8 +47,11 @@ public class MyManager : MonoBehaviour
     public List<float> timeMomentsObstacles = new List<float>();
     public List<float> timeMomentsBlaka = new List<float>();
 
+    public static int levelIndex = 0;
+
     public static bool isGameRunning = true;
     public static bool isFirstTime = true;
+    public static bool isTutorialRunning = false;
 
     //Tutorial Stuff
 
@@ -56,7 +61,7 @@ public class MyManager : MonoBehaviour
     public string tuto_phrase_3;
     public string tuto_phrase_4;
     public string tuto_phrase_5;
-
+    
     //Tuto Stuff End
 
     int timeMomentObstacleIndex = 0;
@@ -100,6 +105,10 @@ public class MyManager : MonoBehaviour
         {
             ExtractMomentsFromFile();
             StartCoroutine(Start_Game());
+            myAudioSource.clip = musicLevels[levelIndex];
+            myAudioSource.PlayOneShot(musicLevels[levelIndex]);
+            myAudioSource.loop = true;
+
             cam3D.SetActive(true);
             theCriminal.SetActive(false);
         }
@@ -110,6 +119,8 @@ public class MyManager : MonoBehaviour
         if (PlayerPrefs.GetInt("tutorial", 0) == 0)
         {
             Start_Tutorial();
+            cam3D.SetActive(true);
+            theCriminal.SetActive(false);
         }
         else
         {
@@ -125,6 +136,7 @@ public class MyManager : MonoBehaviour
 
     IEnumerator Tutorial_Stuff()
     {
+        isTutorialRunning = true;
         yield return new WaitForSeconds(2);
 
         alertCanvas.Display_Alert("Tutorial", tuto_phrase_0);
@@ -183,6 +195,7 @@ public class MyManager : MonoBehaviour
         PlayerPrefs.SetInt("tutorial", 1);
 
         isGameRunning = true;
+        isTutorialRunning = false;
         Start_Stuff();
 
     }
@@ -218,7 +231,7 @@ public class MyManager : MonoBehaviour
 
     void ExtractMomentsFromFile()
     {
-        StreamReader reader = new StreamReader(new MemoryStream(recordedObstaclesMomentsTxtFile.bytes));
+        StreamReader reader = new StreamReader(new MemoryStream(recordedObstaclesMomentsTxtFiles[levelIndex].bytes));
         string line = "";
         do
         {
@@ -227,7 +240,7 @@ public class MyManager : MonoBehaviour
                 timeMomentsObstacles.Add(float.Parse(line));
         } while (line != null);
 
-        reader = new StreamReader(new MemoryStream(recordedBlakaMomentsTxtFile.bytes));
+        reader = new StreamReader(new MemoryStream(recordedBlakaMomentsTxtFiles[levelIndex].bytes));
         line = "";
         do
         {
@@ -262,11 +275,17 @@ public class MyManager : MonoBehaviour
 
                 if (timeMomentObstacleIndex >= timeMomentsObstacles.Count)
                 {
-                    //Win Behaviour
-                    //isWin = true;
+                    StartCoroutine(Win_Behavior());
                 }
             }
         }
+    }
+
+    IEnumerator Win_Behavior()
+    {
+        yield return new WaitForSeconds(2);
+        alertCanvas.Win();
+        isWin = true;
     }
 
     void Spawn_Blaka()

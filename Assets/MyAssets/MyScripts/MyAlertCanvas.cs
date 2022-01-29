@@ -10,10 +10,13 @@ public class MyAlertCanvas : MonoBehaviour
 
     public Animator myAnim;
     public Text alertTitleTxt, alertMsgTxt;
+
     public AudioSource myAudioSource;
     public AudioSource musicPlayer;
 
     public AudioClip infoPanelAudioClip,hoverBtnSFX, musicSfxSwitch;
+
+    public AudioClip winSFX;
 
     public Image musicImg, sfxImg;
 
@@ -48,7 +51,9 @@ public class MyAlertCanvas : MonoBehaviour
 
     public void Hover_Btn(GameObject eventData)
     {
+        if (sfxOn)
         myAudioSource.PlayOneShot(hoverBtnSFX);
+
         hoveredGO = eventData.gameObject;
         hoveredGO.transform.localScale = Vector3.one * 1.2f;
     }
@@ -59,6 +64,14 @@ public class MyAlertCanvas : MonoBehaviour
         {
             hoveredGO.transform.localScale = Vector2.one;
         }
+    }
+
+    public void Win()
+    {
+        myAnim.Play("Display_Victory");
+
+        if(sfxOn)
+        myAudioSource.PlayOneShot(winSFX);
     }
 
     void SoundsStats()

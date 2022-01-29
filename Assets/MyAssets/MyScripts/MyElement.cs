@@ -24,7 +24,7 @@ public class MyElement : MonoBehaviour
 
     void Update()
     {
-        if (MyManager.isGameRunning && isGrounded)
+        if ((MyManager.isGameRunning || MyManager.isTutorialRunning) && isGrounded)
         myRig.velocity = Vector3.forward * mySpeed;
     }
 
