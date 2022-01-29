@@ -12,6 +12,8 @@ public class MyManager : MonoBehaviour
 
     public GameObject nextStoreBlaka;
 
+    public GameObject theCriminal;
+
     public GameObject cam3D, cam2D;
 
     public Transform[] spawnPositions;
@@ -78,6 +80,7 @@ public class MyManager : MonoBehaviour
             ExtractMomentsFromFile();
             StartCoroutine(Start_Game());
             cam3D.SetActive(true);
+            theCriminal.SetActive(false);
         }
     }
 
