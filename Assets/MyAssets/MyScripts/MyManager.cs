@@ -177,6 +177,7 @@ public class MyManager : MonoBehaviour
         GameObject obj = Instantiate(rowOneObstacles[randomElementIndex],
                 parent: rightHandOfCharacter);
         obj.GetComponent<Rigidbody>().isKinematic = true;
+        obj.GetComponent<BoxCollider>().enabled = false;
 
         Destroy(obj, 0.5f);
 
@@ -194,6 +195,7 @@ public class MyManager : MonoBehaviour
         GameObject obj = Instantiate(rowTwoObstacles[randomElementIndex],
                 parent: rightHandOfCharacter);
         obj.GetComponent<Rigidbody>().isKinematic = true;
+        obj.GetComponent<BoxCollider>().enabled = false;
 
         Destroy(obj, 0.5f);
     }
