@@ -22,101 +22,101 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64258
+51015
 Successfully changed project path to: /Users/mouadhmkadmi/Documents/Unity Projects/GGJ_2022
 /Users/mouadhmkadmi/Documents/Unity Projects/GGJ_2022
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 222.01 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 323.45 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.26f1 (7298b473bc1a)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/mouadhmkadmi/Documents/Unity Projects/GGJ_2022/Assets
 GfxDevice: creating device client; threaded=0
-2022-01-29 17:24:02.628 Unity[36846:5307788] (null) preferred device: Apple M1 (high power)
-2022-01-29 17:24:02.629 Unity[36846:5307788] Metal devices available: 1
-2022-01-29 17:24:02.629 Unity[36846:5307788] 0: Apple M1 (high power)
-2022-01-29 17:24:02.629 Unity[36846:5307788] Using device Apple M1 (high power)
+2022-01-29 18:26:26.056 Unity[37700:5344666] (null) preferred device: Apple M1 (high power)
+2022-01-29 18:26:26.056 Unity[37700:5344666] Metal devices available: 1
+2022-01-29 18:26:26.056 Unity[37700:5344666] 0: Apple M1 (high power)
+2022-01-29 18:26:26.056 Unity[37700:5344666] Using device Apple M1 (high power)
 Initializing Metal device caps: Apple M1
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56846
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56700
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.001187 seconds.
+Registered in 0.001216 seconds.
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 131.41 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 142.28 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.373 seconds
+- Completed reload, in  1.455 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1373ms)
-		BeginReloadAssembly (117ms)
+	ReloadAssembly (1455ms)
+		BeginReloadAssembly (126ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (3ms)
-		EndReloadAssembly (1129ms)
-			LoadAssemblies (115ms)
+		EndReloadAssembly (1195ms)
+			LoadAssemblies (124ms)
 			RebuildTransferFunctionScriptingTraits (1ms)
-			SetupTypeCache (182ms)
+			SetupTypeCache (187ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (632ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (661ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (131ms)
-				BeforeProcessingInitializeOnLoad (80ms)
-				ProcessInitializeOnLoadAttributes (300ms)
-				ProcessInitializeOnLoadMethodAttributes (107ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (142ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (312ms)
+				ProcessInitializeOnLoadMethodAttributes (110ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.008579 seconds.
+Registered in 0.008059 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 140.66 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 151.58 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Refreshing native plugins compatible for Editor in 1.43 ms, found 2 plugins.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.826 seconds
+- Completed reload, in  2.881 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2829ms)
-		BeginReloadAssembly (254ms)
+	ReloadAssembly (2883ms)
+		BeginReloadAssembly (259ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (30ms)
+			DisableScriptedObjects (32ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (2489ms)
-			LoadAssemblies (217ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (2539ms)
+			LoadAssemblies (214ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (452ms)
+			SetupTypeCache (458ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (87ms)
-			SetupLoadedEditorAssemblies (1442ms)
+			SetupLoadedEditorAssemblies (1488ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (141ms)
-				BeforeProcessingInitializeOnLoad (197ms)
-				ProcessInitializeOnLoadAttributes (1054ms)
-				ProcessInitializeOnLoadMethodAttributes (41ms)
+				RefreshPlugins (152ms)
+				BeforeProcessingInitializeOnLoad (203ms)
+				ProcessInitializeOnLoadAttributes (1082ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (30ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
 Platform modules already initialized, skipping
-Validating Project structure ... 0.090882 seconds.
+Validating Project structure ... 0.038665 seconds.
 Shader import version has changed; will reimport all shaders...
-Upgrading shader files ...0.050792 seconds.
+Upgrading shader files ...0.050045 seconds.
 Application.AssetDatabase Initial Script Refresh Start
 RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
 RefreshProfiler: Total: 0.000ms
@@ -128,18 +128,18 @@ RefreshProfiler: Total: 0.000ms
 Launching external process: /Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.19 seconds
 Initializing Unity extensions:
-2022-01-29 17:24:09.674 Unity[36846:5307788] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002c707e0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-2022-01-29 17:24:09.678 Unity[36846:5307788] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002c9a300 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2022-01-29 18:26:33.029 Unity[37700:5344666] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000291dc70 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2022-01-29 18:26:33.033 Unity[37700:5344666] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000029f4e00 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 ========================================================================
 Worker process is ready to serve import requests
-Refreshing native plugins compatible for Editor in 1.26 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.38 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4196 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 352.8 MB.
-System memory in use after: 336.5 MB.
+System memory in use before: 353.1 MB.
+System memory in use after: 336.8 MB.
 
 Unloading 380 unused Assets to reduce memory usage. Loaded Objects now: 4541.
-Total: 8.796000 ms (FindLiveObjects: 0.219333 ms CreateObjectMapping: 0.111417 ms MarkObjects: 3.710791 ms  DeleteObjects: 4.753208 ms)
+Total: 8.087875 ms (FindLiveObjects: 0.226125 ms CreateObjectMapping: 0.123083 ms MarkObjects: 2.887375 ms  DeleteObjects: 4.850292 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -153,826 +153,778 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/GUI Kit DarkStone/Prefabs/Panels/Title.prefab
-  artifactKey: Guid(6e1021530d0b64875ad90ee493c9d3e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/Prefabs/Panels/Title.prefab using Guid(6e1021530d0b64875ad90ee493c9d3e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccc7580802adb1fcaa086a5369f47cee') in 0.407714 seconds 
-  Import took 0.417926 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002160 seconds.
-  path: Assets/GUI Kit DarkStone/Prefabs/Panels/Popup_Complete.prefab
-  artifactKey: Guid(12ef297028705467b8fce39ea5efc59b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/Prefabs/Panels/Popup_Complete.prefab using Guid(12ef297028705467b8fce39ea5efc59b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd305d60f33cb3de1ba2255ba64c8929') in 0.033750 seconds 
-  Import took 0.038608 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 135.812695 seconds.
-  path: Assets/MyAssets/MyAnimations/Display_Victory.anim
-  artifactKey: Guid(89acb4ca83c784b44b6bdd1529eb591d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/MyAnimations/Display_Victory.anim using Guid(89acb4ca83c784b44b6bdd1529eb591d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a4bde725069ae53de92c386650bec79') in 0.141244 seconds 
-  Import took 0.171130 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.964615 seconds.
-  path: Assets/MyAssets/MyAnimations/Display_Victory.anim
-  artifactKey: Guid(89acb4ca83c784b44b6bdd1529eb591d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/MyAnimations/Display_Victory.anim using Guid(89acb4ca83c784b44b6bdd1529eb591d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfc3ed000f24e63a148f8ab91ec32450') in 0.002669 seconds 
-  Import took 0.009387 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.514214 seconds.
-  path: Assets/MyAssets/MyAnimations/Canvas.controller
-  artifactKey: Guid(84a7b08b3155f4523bd78242c607ad40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/MyAnimations/Canvas.controller using Guid(84a7b08b3155f4523bd78242c607ad40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a234b8dd5d8e25543066e8d3a12fdc1c') in 0.081074 seconds 
-  Import took 0.090527 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.407814 seconds.
-  path: Assets/MyAssets/MyAnimations/Resume_Anim.anim
-  artifactKey: Guid(014af1551e68d44e980066fd16f18104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/MyAnimations/Resume_Anim.anim using Guid(014af1551e68d44e980066fd16f18104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ebd9371cbf23e0b1754bc94f15c82d4') in 0.002080 seconds 
-  Import took 0.008519 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.502834 seconds.
-  path: Assets/MyAssets/MyAnimations/PausePanel.anim
-  artifactKey: Guid(6c46f5426349a496d85e29e9a64dcec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/MyAnimations/PausePanel.anim using Guid(6c46f5426349a496d85e29e9a64dcec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bee16bffbf86e90ac1105a0f3ea5622') in 0.003412 seconds 
-  Import took 0.010424 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 200.128231 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_prev_green.png
-  artifactKey: Guid(293d0c361961f4a8a86e0129e2d66ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_prev_green.png using Guid(293d0c361961f4a8a86e0129e2d66ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2fa3778b4325d57887da7e655bf8f5a') in 0.307857 seconds 
-  Import took 0.332504 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000283 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Common/btn_sns_twitter.png
-  artifactKey: Guid(c315514da21324cd48588f8355d3682f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Common/btn_sns_twitter.png using Guid(c315514da21324cd48588f8355d3682f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b3b20efdd7403dfa91cdab608dea1dd') in 0.015153 seconds 
-  Import took 0.020746 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_remove_green.png
-  artifactKey: Guid(7a012cef4f33a4e38b9b49736d7b1832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_remove_green.png using Guid(7a012cef4f33a4e38b9b49736d7b1832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40bf24b1250846ff08506968c690ecce') in 0.021635 seconds 
-  Import took 0.027371 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_rw_gray.png
-  artifactKey: Guid(3d387c57f2eeb471f989ce11b1d3e89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_rw_gray.png using Guid(3d387c57f2eeb471f989ce11b1d3e89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14afb4ef03605417fb1d9552a55e0861') in 0.022756 seconds 
-  Import took 0.027509 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_ranking_gray.png
-  artifactKey: Guid(d4047aed76f8f42feac1cc224024a027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_ranking_gray.png using Guid(d4047aed76f8f42feac1cc224024a027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88cc9c1a4e062e575c7e68afd7df9bb7') in 0.017461 seconds 
-  Import took 0.022494 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/GUI Kit DarkStone/PSD/btn_small.psd
-  artifactKey: Guid(098613f9ae75149ad98d9da1dbad03ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/PSD/btn_small.psd using Guid(098613f9ae75149ad98d9da1dbad03ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '472eece449d4a3f92064bf2e38f0f7ec') in 0.091149 seconds 
-  Import took 0.098044 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000226 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_retry_green.png
-  artifactKey: Guid(43dd2042fcf8e4b5196afe14c577060b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_retry_green.png using Guid(43dd2042fcf8e4b5196afe14c577060b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df8733f8869d700e6dfed0ebf4eb25d6') in 0.011196 seconds 
-  Import took 0.015394 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_retry_gray.png
-  artifactKey: Guid(885204137c1f941c89681c422b8c726f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_retry_gray.png using Guid(885204137c1f941c89681c422b8c726f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '349d253d12dba544255f03e9f7fbac51') in 0.009709 seconds 
-  Import took 0.013901 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_ranking_gray.png
-  artifactKey: Guid(01dbf904eeea64ee78dc304931234360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_ranking_gray.png using Guid(01dbf904eeea64ee78dc304931234360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05ee0a182a7af7e2c815c5371c44ecce') in 0.010804 seconds 
-  Import took 0.015066 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000242 seconds.
-  path: Assets/MyGameOverManager/Ferid_Logo_1.png
-  artifactKey: Guid(41e188ad0d0158941a74fcb415dd48cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyGameOverManager/Ferid_Logo_1.png using Guid(41e188ad0d0158941a74fcb415dd48cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd06f6c09e040b8f07613ab6bed1c1deb') in 0.017703 seconds 
-  Import took 0.021929 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_star_green.png
-  artifactKey: Guid(934716fe2d1114f68b6930d768ed5a34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_star_green.png using Guid(934716fe2d1114f68b6930d768ed5a34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08ba72b2788224781ad9a6b9ecbaaa2a') in 0.010261 seconds 
-  Import took 0.014800 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_ranking_green.png
-  artifactKey: Guid(9fe82e7b849cf4fa3868578b09da4009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_ranking_green.png using Guid(9fe82e7b849cf4fa3868578b09da4009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca72a7958938ded2db57b54af993b87f') in 0.009888 seconds 
-  Import took 0.014311 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_prev_green.png
-  artifactKey: Guid(9afec14a6714641d78c6f38421ba2c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_prev_green.png using Guid(9afec14a6714641d78c6f38421ba2c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c95d6274af03f6f16d0564e310003e03') in 0.009376 seconds 
-  Import took 0.014166 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000215 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_remove_gray.png
-  artifactKey: Guid(86f94e3095f6444b0a385c8a803cd54f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_remove_gray.png using Guid(86f94e3095f6444b0a385c8a803cd54f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c23fe47fe3204849d419eccc300c603') in 0.011366 seconds 
-  Import took 0.015354 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_remove_green.png
-  artifactKey: Guid(1811defe65e084eea97413a5832d4242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_remove_green.png using Guid(1811defe65e084eea97413a5832d4242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7e733c60c40815585d7aa76449ca458') in 0.010497 seconds 
-  Import took 0.014767 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_timer_gray.png
-  artifactKey: Guid(5a36455754d384d8d8f0516a1ca33510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_timer_gray.png using Guid(5a36455754d384d8d8f0516a1ca33510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55e8d4b1a158ead370a54448409cfbec') in 0.011440 seconds 
-  Import took 0.015638 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_remove_green.png
-  artifactKey: Guid(f43c31a278f014d8291a6ecc874348f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_remove_green.png using Guid(f43c31a278f014d8291a6ecc874348f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ab46e070cd09dddc8e66ed01d6cca9d') in 0.011014 seconds 
-  Import took 0.015671 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000256 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_sound_off_green.png
-  artifactKey: Guid(47774cc008149420296671612eefe24c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_sound_off_green.png using Guid(47774cc008149420296671612eefe24c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9669c4946dd0853008a17aa32309fbfc') in 0.010758 seconds 
-  Import took 0.015261 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000242 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_sound_on_gray.png
-  artifactKey: Guid(57383be96793048fc87898b5febdaed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_sound_on_gray.png using Guid(57383be96793048fc87898b5febdaed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d523ec7e06075e60a030b2545083743') in 0.009734 seconds 
-  Import took 0.013777 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/MyGameOverManager/Game_Over_Graphics_Loading.png
-  artifactKey: Guid(da8c04badf922cf45bb72109c2dde9bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyGameOverManager/Game_Over_Graphics_Loading.png using Guid(da8c04badf922cf45bb72109c2dde9bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9de50bad2d9712b1c402af6760465a1f') in 0.017387 seconds 
-  Import took 0.021594 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_rw_green.png
-  artifactKey: Guid(a0cf7bd42234d4f80bad592423dd64d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_rw_green.png using Guid(a0cf7bd42234d4f80bad592423dd64d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0da0089fb21372ed57ac61aba3a2ebcb') in 0.015996 seconds 
-  Import took 0.020327 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_star_gray.png
-  artifactKey: Guid(848baf527d9714d0192e75cfae1db402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_star_gray.png using Guid(848baf527d9714d0192e75cfae1db402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9a93bd845be2426f9b05ce620c44720') in 0.014441 seconds 
-  Import took 0.019513 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_remove_gray.png
-  artifactKey: Guid(6156141740ee943aface9342287ac124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_remove_gray.png using Guid(6156141740ee943aface9342287ac124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46dfc538cf51b68b686a392e82cfb812') in 0.010114 seconds 
-  Import took 0.015141 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_star_gray.png
-  artifactKey: Guid(ad58427e97e904c96b162d8208fd3958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_star_gray.png using Guid(ad58427e97e904c96b162d8208fd3958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8a072127c2b0f919da1fcb58f37d32a') in 0.011102 seconds 
-  Import took 0.015595 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_sound_off_gray.png
-  artifactKey: Guid(40ad0e26a0f8a47a1ac48685b673d050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_sound_off_gray.png using Guid(40ad0e26a0f8a47a1ac48685b673d050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '277208d43341f8d275465eee85d8879f') in 0.010756 seconds 
-  Import took 0.015208 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_rw_gray.png
-  artifactKey: Guid(2ddf0001d67194c64b9317947138c6ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_rw_gray.png using Guid(2ddf0001d67194c64b9317947138c6ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57892f8e23d42db72786b7facb083a5d') in 0.010084 seconds 
-  Import took 0.014454 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_retry_gray.png
-  artifactKey: Guid(2477a1ba9141e4b61ac6a17c7fc40ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_retry_gray.png using Guid(2477a1ba9141e4b61ac6a17c7fc40ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '087db25df98ee766cea182c514ab76df') in 0.009806 seconds 
-  Import took 0.013872 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_sound_off_gray.png
-  artifactKey: Guid(82708d680f6374edb84bf9347b4e879d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_sound_off_gray.png using Guid(82708d680f6374edb84bf9347b4e879d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80db7236be44dfc767f7511d684ea217') in 0.015846 seconds 
-  Import took 0.020421 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_star_green.png
-  artifactKey: Guid(8b824f46f405044e59f66c4a0cbc0a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_star_green.png using Guid(8b824f46f405044e59f66c4a0cbc0a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff70bd80691eac4f31cf5bc6ea104701') in 0.010277 seconds 
-  Import took 0.014852 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_rw_gray.png
-  artifactKey: Guid(e6296951127c9406b9ba3c71491e6aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_rw_gray.png using Guid(e6296951127c9406b9ba3c71491e6aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb9482975fada4408d9962f86b684cb4') in 0.012487 seconds 
-  Import took 0.016760 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Title/btn_start.png
-  artifactKey: Guid(56ed90ef292c045d8af5f65585f0f67d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Title/btn_start.png using Guid(56ed90ef292c045d8af5f65585f0f67d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fc1050781607d7f7bbb0cea21778b39') in 0.011447 seconds 
-  Import took 0.016345 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_sound_off_gray.png
-  artifactKey: Guid(72ec6015b7f794abb93f4e5aca93bc63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_sound_off_gray.png using Guid(72ec6015b7f794abb93f4e5aca93bc63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5940a111516db17b713678a2e0d87e92') in 0.010910 seconds 
-  Import took 0.015400 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_ranking_green.png
-  artifactKey: Guid(901f462a0b39d4eada2161f330b3bbc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_ranking_green.png using Guid(901f462a0b39d4eada2161f330b3bbc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '807d052f01e417116310e67046364992') in 0.010856 seconds 
-  Import took 0.014944 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_ranking_green.png
-  artifactKey: Guid(c0e74f3f1366744a38a39b49a1578041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_ranking_green.png using Guid(c0e74f3f1366744a38a39b49a1578041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e59aedb16ba68ce29d949bf08c0256b') in 0.010713 seconds 
-  Import took 0.014768 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000245 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_rw_green.png
-  artifactKey: Guid(997599c11704a48b9ad7bf36ff6c60fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_rw_green.png using Guid(997599c11704a48b9ad7bf36ff6c60fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75e1b80c88b2aacab5706db8dd7418e9') in 0.011721 seconds 
-  Import took 0.016138 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_retry_green.png
-  artifactKey: Guid(4954320ba3837458c8631f3f32586f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_retry_green.png using Guid(4954320ba3837458c8631f3f32586f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '605117ab0af375eae0d4c7dc246c7557') in 0.010164 seconds 
-  Import took 0.014638 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000226 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_sound_on_gray.png
-  artifactKey: Guid(db0f872f1a0ce4ee2bd74ccf00a1cdc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_sound_on_gray.png using Guid(db0f872f1a0ce4ee2bd74ccf00a1cdc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cabbb4e145179e87f1c842990a088d8') in 0.010749 seconds 
-  Import took 0.015019 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000163 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_retry_gray.png
-  artifactKey: Guid(3a61f006ae3394b2cb896240989a151e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_retry_gray.png using Guid(3a61f006ae3394b2cb896240989a151e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c3218f0ba7b353e84ae92cd9cc4fbe7') in 0.012205 seconds 
-  Import took 0.016944 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000259 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_rw_green.png
-  artifactKey: Guid(dc44e44a36d514a188eec534ee2914bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_rw_green.png using Guid(dc44e44a36d514a188eec534ee2914bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '201c336604e5e2c72623fb1232a23788') in 0.013568 seconds 
-  Import took 0.018453 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_prev_green.png
-  artifactKey: Guid(1ea207ac0bb9849b6800a3ebe97e4a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_prev_green.png using Guid(1ea207ac0bb9849b6800a3ebe97e4a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '883b001e9c17746bd41813e472689381') in 0.013236 seconds 
-  Import took 0.017490 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000248 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_sound_off_gray.png
-  artifactKey: Guid(539d776ced81e4f59890eb5ca3b1d9f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_sound_off_gray.png using Guid(539d776ced81e4f59890eb5ca3b1d9f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '148234b1a2dccc6c5e70c22319d620df') in 0.016303 seconds 
-  Import took 0.020483 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_rw_gray.png
-  artifactKey: Guid(646291c06f1e447ccae88ac889fcab5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_rw_gray.png using Guid(646291c06f1e447ccae88ac889fcab5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8898d374f24bff5c71182f5b8753b14f') in 0.010416 seconds 
-  Import took 0.014743 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_remove_green.png
-  artifactKey: Guid(db3b7c782e4044b1faa06f293b7f7cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_remove_green.png using Guid(db3b7c782e4044b1faa06f293b7f7cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b29cff59dbd7e0ab15534baab9054ce9') in 0.010119 seconds 
-  Import took 0.014244 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000168 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_retry_gray.png
-  artifactKey: Guid(d3798627eebb34297a202409430d8d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_retry_gray.png using Guid(d3798627eebb34297a202409430d8d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '165cc88c1f413022d967e2e8ee97839c') in 0.011277 seconds 
-  Import took 0.015742 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000343 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Common/btn_sns_google.png
-  artifactKey: Guid(401fb60e4677a4092b0f2b41de7bfd8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Common/btn_sns_google.png using Guid(401fb60e4677a4092b0f2b41de7bfd8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc1783c8f36e91188f0c388d129ac8d3') in 0.010320 seconds 
-  Import took 0.014891 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_star_green.png
-  artifactKey: Guid(bca73b35d9e684d52bd1d235d6d286bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_star_green.png using Guid(bca73b35d9e684d52bd1d235d6d286bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60446eb9212b8e294d4d94311b3c04e2') in 0.010793 seconds 
-  Import took 0.014716 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_rw_green.png
-  artifactKey: Guid(cce4538d2efb0467a8af71c6307358e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_rw_green.png using Guid(cce4538d2efb0467a8af71c6307358e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66558ef87d6289f491118eed1bfbe4ab') in 0.009352 seconds 
-  Import took 0.013438 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_sound_on_green.png
-  artifactKey: Guid(120828546b2b445799c96549fec27eb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_sound_on_green.png using Guid(120828546b2b445799c96549fec27eb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1594bd771df0682153f9b427c123d668') in 0.010372 seconds 
-  Import took 0.014639 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000231 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_sound_off_gray.png
-  artifactKey: Guid(96a7990a1f7f1469c958b95d29fe0da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_sound_off_gray.png using Guid(96a7990a1f7f1469c958b95d29fe0da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1556c8f47eb11a6735856d72cb6e1a7c') in 0.010257 seconds 
-  Import took 0.014494 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_rw_green.png
-  artifactKey: Guid(ab80e6958bbeb4aea8f2dd87da7b1ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_rw_green.png using Guid(ab80e6958bbeb4aea8f2dd87da7b1ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a17d6ba73e64b9843305a5cc4c6fef72') in 0.010048 seconds 
-  Import took 0.014521 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_ranking_gray.png
-  artifactKey: Guid(2017a0ba141af43fdaae8703e3a40c9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_ranking_gray.png using Guid(2017a0ba141af43fdaae8703e3a40c9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6956e521abb31bc74e91a4eff1c640e') in 0.009761 seconds 
-  Import took 0.013746 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/MyGameOverManager/Ferid_Logo_0.png
-  artifactKey: Guid(3611dbce37c3280468df015f1bef0900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyGameOverManager/Ferid_Logo_0.png using Guid(3611dbce37c3280468df015f1bef0900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eb84101ed1cb4a357cad888a3ca85b0') in 0.019560 seconds 
-  Import took 0.023584 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000226 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_sound_off_green.png
-  artifactKey: Guid(c7b4eeb52ff6e47d0abecb0fb5dc74a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_sound_off_green.png using Guid(c7b4eeb52ff6e47d0abecb0fb5dc74a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a738621c1cc1c50d18e0e313aab88695') in 0.009720 seconds 
-  Import took 0.013822 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_timer_gray.png
-  artifactKey: Guid(d8efe93b5f13740f6b47201e01b9b56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_timer_gray.png using Guid(d8efe93b5f13740f6b47201e01b9b56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a09600e7d44fd1945131a1da8481f96') in 0.009407 seconds 
-  Import took 0.013451 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_retry_gray.png
-  artifactKey: Guid(f273d7cecb55645fba49065371882361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_retry_gray.png using Guid(f273d7cecb55645fba49065371882361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eb7d8dbbd84e1137d51ceec93baca41') in 0.011062 seconds 
-  Import took 0.015055 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000245 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_sound_off_green.png
-  artifactKey: Guid(8b63cc0d1b6fa44eb8cd3843c95c6555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_sound_off_green.png using Guid(8b63cc0d1b6fa44eb8cd3843c95c6555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f5d7e072a78634415fbce85763714e7') in 0.017260 seconds 
-  Import took 0.021623 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_ranking_gray.png
-  artifactKey: Guid(62dbf614f434f400495acc9d1ed3c11c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_ranking_gray.png using Guid(62dbf614f434f400495acc9d1ed3c11c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '966637eb0204e7c73dde64ace94e99c5') in 0.010635 seconds 
-  Import took 0.015092 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_sound_on_gray.png
-  artifactKey: Guid(dc7815c42a150466692e8762ec5c6d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_sound_on_gray.png using Guid(dc7815c42a150466692e8762ec5c6d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e102fabc69e8b546d5b96d836ebd5535') in 0.009464 seconds 
-  Import took 0.013733 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_retry_green.png
-  artifactKey: Guid(41f1c886cd23841a6a37c70338af6048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_retry_green.png using Guid(41f1c886cd23841a6a37c70338af6048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e884a05dbf1eaec612d7e054ce848884') in 0.010175 seconds 
-  Import took 0.014497 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_sound_on_green.png
-  artifactKey: Guid(7e40972da2576454e93f6f6f8cce81dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_sound_on_green.png using Guid(7e40972da2576454e93f6f6f8cce81dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01c007a25fe21dea32036db6b4df4efc') in 0.010093 seconds 
-  Import took 0.014373 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_sound_on_gray.png
-  artifactKey: Guid(55bccbedc03904ac1bc990893be161e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_sound_on_gray.png using Guid(55bccbedc03904ac1bc990893be161e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a1d9bcf1bd04c1d08aa157dae4d9e41') in 0.010991 seconds 
-  Import took 0.014940 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_star_gray.png
-  artifactKey: Guid(f79407f0fb1ab4889aff25e9563cec12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_star_gray.png using Guid(f79407f0fb1ab4889aff25e9563cec12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f684ce98c13eb768aa4b851f4260c45') in 0.010736 seconds 
-  Import took 0.014897 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_ranking_green.png
-  artifactKey: Guid(9e8857d640a5a446d83272395031be36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_ranking_green.png using Guid(9e8857d640a5a446d83272395031be36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27422e9ceaea0e3f7e3c9e6ebefdf6ef') in 0.010401 seconds 
-  Import took 0.014425 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_rw_gray.png
-  artifactKey: Guid(cb3e40644653446d9852199f49998438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_rw_gray.png using Guid(cb3e40644653446d9852199f49998438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4110fdd76f19c3210f3fb8c43506306b') in 0.010042 seconds 
-  Import took 0.014470 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_sound_off_green.png
-  artifactKey: Guid(cdbb4563e7e2141ce91afe0465fae62b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_sound_off_green.png using Guid(cdbb4563e7e2141ce91afe0465fae62b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '195e55ead2fbc595f8390c2edd12a1bf') in 0.010175 seconds 
-  Import took 0.014436 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_remove_gray.png
-  artifactKey: Guid(d0b50dff34b3243d99e68f252f4e1841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_remove_gray.png using Guid(d0b50dff34b3243d99e68f252f4e1841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96173f39dcc6fe3a47e4c863d1aa131f') in 0.012172 seconds 
-  Import took 0.016816 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_sound_on_gray.png
-  artifactKey: Guid(09bfd18979a534892bd3826c9ecfdae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_sound_on_gray.png using Guid(09bfd18979a534892bd3826c9ecfdae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3201c8e39487ca4c2b002ece1e8836b2') in 0.010591 seconds 
-  Import took 0.014861 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_sound_off_green.png
-  artifactKey: Guid(fa15618b051c74eacafdd3e2366b06d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_sound_off_green.png using Guid(fa15618b051c74eacafdd3e2366b06d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39f09efe936d4838d49cea467d629495') in 0.009498 seconds 
-  Import took 0.013811 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_ranking_green.png
-  artifactKey: Guid(724eed8a511104ad0808772b63a738be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_ranking_green.png using Guid(724eed8a511104ad0808772b63a738be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cea91f800c4a6edc2741cf9f62e6e50') in 0.009466 seconds 
-  Import took 0.013454 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_remove_gray.png
-  artifactKey: Guid(794fdea82c40f44a58449ff163b99f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_remove_gray.png using Guid(794fdea82c40f44a58449ff163b99f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1e0d46fb5fbe89bd160fa2af25c5e1f') in 0.010944 seconds 
-  Import took 0.014909 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_sound_on_green.png
-  artifactKey: Guid(e7cb60350dd58438683dcdd3a76c5e95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_sound_on_green.png using Guid(e7cb60350dd58438683dcdd3a76c5e95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4137d488a853307911bd358390a43892') in 0.013272 seconds 
-  Import took 0.017542 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_retry_green.png
-  artifactKey: Guid(b3d597f3bd30d43b299460ab6beb0b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_retry_green.png using Guid(b3d597f3bd30d43b299460ab6beb0b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b91601368f1fd8fecdc0d2abac2c235') in 0.011561 seconds 
-  Import took 0.015830 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000225 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_sound_on_green.png
-  artifactKey: Guid(b6f8e6df7913e4be0ae2dbd64aa58d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_sound_on_green.png using Guid(b6f8e6df7913e4be0ae2dbd64aa58d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3889c68a30a43f93a503f8de87c62598') in 0.009651 seconds 
-  Import took 0.013639 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Common/btn_sns_facebook.png
-  artifactKey: Guid(24d5066491e684d20b871e60d6df3228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Common/btn_sns_facebook.png using Guid(24d5066491e684d20b871e60d6df3228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5b213816344494356ab543d7b95707e') in 0.011925 seconds 
-  Import took 0.016238 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_star_green.png
-  artifactKey: Guid(25a8bcbdbb0fb427cbd22a20a168e1fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_star_green.png using Guid(25a8bcbdbb0fb427cbd22a20a168e1fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6117dfe96cbe38f9d870c5c8992c1cae') in 0.010183 seconds 
-  Import took 0.014899 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_star_gray.png
-  artifactKey: Guid(cb8b13e5f63874a8db9f8d1ad08476e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_star_gray.png using Guid(cb8b13e5f63874a8db9f8d1ad08476e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c2017335ac215ed159e658ae026b8a8') in 0.009931 seconds 
-  Import took 0.014353 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_retry_green.png
-  artifactKey: Guid(e667e9d170e5845599dc08e0474da062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_retry_green.png using Guid(e667e9d170e5845599dc08e0474da062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb072cfbf1f2be7df337f8245a0f7577') in 0.009742 seconds 
-  Import took 0.014061 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_ranking_gray.png
-  artifactKey: Guid(73b4082b2988748b49243398445fe68c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_128x128/btn_ranking_gray.png using Guid(73b4082b2988748b49243398445fe68c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b2bf7fda74cdea6032bbe306b6821b3') in 0.009531 seconds 
-  Import took 0.013844 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_remove_green.png
-  artifactKey: Guid(dffa1ef9bd907407f815d3cf927f8581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Large/btn_remove_green.png using Guid(dffa1ef9bd907407f815d3cf927f8581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '242925994f92c00a822d1fa50447452d') in 0.011421 seconds 
-  Import took 0.015355 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_sound_on_green.png
-  artifactKey: Guid(3b192edb91e4343e4aba23868729656b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_512x512/btn_sound_on_green.png using Guid(3b192edb91e4343e4aba23868729656b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15f3b27f13f21daa07944ce72e671238') in 0.010131 seconds 
-  Import took 0.014165 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_remove_gray.png
-  artifactKey: Guid(188b428461e23416a804d92d43b16755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Button_256x256/btn_remove_gray.png using Guid(188b428461e23416a804d92d43b16755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd3876bd7b1fa562a8e603f542eaa90d') in 0.010920 seconds 
-  Import took 0.014893 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Complete/btn_retry.png
-  artifactKey: Guid(2f38a4a3b585449e588bd3e2f8a37842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Complete/btn_retry.png using Guid(2f38a4a3b585449e588bd3e2f8a37842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc6858514ca9661e6e4ed8cca7d6d84') in 0.010755 seconds 
-  Import took 0.015100 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000275 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_star_gray.png
-  artifactKey: Guid(8c9e0f7efba314d2ea20d419dbf4c4b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_star_gray.png using Guid(8c9e0f7efba314d2ea20d419dbf4c4b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44ba615266e94958a38a97caecce2df6') in 0.010000 seconds 
-  Import took 0.015065 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000226 seconds.
-  path: Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_star_green.png
-  artifactKey: Guid(e4253b1b22845450ea7a88da2fd73106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GUI Kit DarkStone/ResourceData/Sprite/Funtion_Button/Original_Small/btn_star_green.png using Guid(e4253b1b22845450ea7a88da2fd73106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '198c40cfc1825818f96fab0db3215dd9') in 0.010032 seconds 
-  Import took 0.013975 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 157.339858 seconds.
-  path: Assets/MyAssets/MyAnimations/Canvas.controller
-  artifactKey: Guid(84a7b08b3155f4523bd78242c607ad40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/MyAnimations/Canvas.controller using Guid(84a7b08b3155f4523bd78242c607ad40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '121fefdad2990dc8855469f489792692') in 0.019614 seconds 
-  Import took 0.047662 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.643664 seconds.
-  path: Assets/MyAssets/MyAnimations/LoopableVictory.anim
-  artifactKey: Guid(936824ebf17b94e1e9eb0abb00c438d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/MyAnimations/LoopableVictory.anim using Guid(936824ebf17b94e1e9eb0abb00c438d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3be294b884d79fdeafa3896d2d4bcb0') in 0.009167 seconds 
-  Import took 0.036113 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.880622 seconds.
-  path: Assets/MyAssets/MyAnimations/Canvas.controller
-  artifactKey: Guid(84a7b08b3155f4523bd78242c607ad40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/MyAnimations/Canvas.controller using Guid(84a7b08b3155f4523bd78242c607ad40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd023df2afe75b82660297d9dc52d8c0b') in 0.007330 seconds 
-  Import took 0.014178 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.966380 seconds.
-  path: Assets/MyAssets/MyAnimations/Canvas.controller
-  artifactKey: Guid(84a7b08b3155f4523bd78242c607ad40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/MyAnimations/Canvas.controller using Guid(84a7b08b3155f4523bd78242c607ad40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a468a97b08965e7fa260dd5d164cb40') in 0.003279 seconds 
-  Import took 0.008256 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 302.725982 seconds.
-  path: Assets/MyAssets/MySounds/PowerUp18.mp3
-  artifactKey: Guid(1195bc7667e5c4a3693c41764cfd0dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/MySounds/PowerUp18.mp3 using Guid(1195bc7667e5c4a3693c41764cfd0dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9265991095919e85e5527e0f009d97e1') in 0.267733 seconds 
-  Import took 0.295005 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.024830 seconds.
-  path: Assets/MyAssets/MySounds/WinSFX.mp3
-  artifactKey: Guid(1195bc7667e5c4a3693c41764cfd0dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/MySounds/WinSFX.mp3 using Guid(1195bc7667e5c4a3693c41764cfd0dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b82c42b0c3e57ba6ef143a7ed5b38fc4') in 0.014927 seconds 
-  Import took 0.022895 seconds .
+  path: Assets/MyAssets/MySounds/Explosion2.ogg
+  artifactKey: Guid(b9c04022809f748cf90fd97cbebec9c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/MySounds/Explosion2.ogg using Guid(b9c04022809f748cf90fd97cbebec9c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f822775d585d3d1e146353cdf0272f74') in 0.305468 seconds 
+  Import took 0.317146 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004931 seconds.
+Registered in 0.008075 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.41 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.47 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-2022-01-29 17:42:08.512 Unity[36846:5307788] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002c62610 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Refreshing native plugins compatible for Editor in 1.34 ms, found 2 plugins.
+2022-01-29 18:27:22.182 Unity[37700:5344666] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002961490 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Refreshing native plugins compatible for Editor in 1.37 ms, found 2 plugins.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.932 seconds
+- Completed reload, in  2.829 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2934ms)
-		BeginReloadAssembly (278ms)
+	ReloadAssembly (2832ms)
+		BeginReloadAssembly (253ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (31ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (102ms)
+		EndReloadAssembly (2489ms)
+			LoadAssemblies (224ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (424ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (1422ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (270ms)
+				ProcessInitializeOnLoadAttributes (1100ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 333.3 MB.
+System memory in use after: 328.9 MB.
+
+Unloading 70 unused Assets to reduce memory usage. Loaded Objects now: 4552.
+Total: 5.155708 ms (FindLiveObjects: 0.198083 ms CreateObjectMapping: 0.099250 ms MarkObjects: 2.469042 ms  DeleteObjects: 2.388292 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005079 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.56 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-29 18:30:07.552 Unity[37700:5344666] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000295b410 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Refreshing native plugins compatible for Editor in 1.31 ms, found 2 plugins.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.017 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3019ms)
+		BeginReloadAssembly (289ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (35ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (135ms)
+		EndReloadAssembly (2637ms)
+			LoadAssemblies (298ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (476ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (1406ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (265ms)
+				ProcessInitializeOnLoadAttributes (1084ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (33ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 333.7 MB.
+System memory in use after: 329.2 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4554.
+Total: 7.219500 ms (FindLiveObjects: 0.225916 ms CreateObjectMapping: 0.107542 ms MarkObjects: 4.265625 ms  DeleteObjects: 2.619209 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004694 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-29 18:32:29.362 Unity[37700:5344666] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000290bbf0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Refreshing native plugins compatible for Editor in 1.36 ms, found 2 plugins.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.960 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2961ms)
+		BeginReloadAssembly (252ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (29ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (104ms)
+		EndReloadAssembly (2618ms)
+			LoadAssemblies (302ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (483ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (75ms)
+			SetupLoadedEditorAssemblies (1387ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (260ms)
+				ProcessInitializeOnLoadAttributes (1073ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 334.3 MB.
+System memory in use after: 329.9 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4556.
+Total: 7.449292 ms (FindLiveObjects: 0.209250 ms CreateObjectMapping: 0.098875 ms MarkObjects: 4.497208 ms  DeleteObjects: 2.642542 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004628 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-29 18:34:17.999 Unity[37700:5344666] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002903560 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Refreshing native plugins compatible for Editor in 1.42 ms, found 2 plugins.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.921 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2922ms)
+		BeginReloadAssembly (259ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (32ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (110ms)
+		EndReloadAssembly (2573ms)
+			LoadAssemblies (215ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (528ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (75ms)
+			SetupLoadedEditorAssemblies (1368ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (261ms)
+				ProcessInitializeOnLoadAttributes (1054ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 334.7 MB.
+System memory in use after: 330.2 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4558.
+Total: 5.437500 ms (FindLiveObjects: 0.189792 ms CreateObjectMapping: 0.098125 ms MarkObjects: 2.432167 ms  DeleteObjects: 2.716334 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004998 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-29 18:35:07.897 Unity[37700:5344666] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002902c30 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Refreshing native plugins compatible for Editor in 1.49 ms, found 2 plugins.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.978 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2980ms)
+		BeginReloadAssembly (251ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (30ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (125ms)
-		EndReloadAssembly (2563ms)
-			LoadAssemblies (205ms)
+			CreateAndSetChildDomain (107ms)
+		EndReloadAssembly (2632ms)
+			LoadAssemblies (216ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (464ms)
+			SetupTypeCache (539ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (1401ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (263ms)
+				ProcessInitializeOnLoadAttributes (1087ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (30ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 334.9 MB.
+System memory in use after: 330.5 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4560.
+Total: 5.958000 ms (FindLiveObjects: 0.238458 ms CreateObjectMapping: 0.107417 ms MarkObjects: 2.822917 ms  DeleteObjects: 2.784084 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 563.401708 seconds.
+  path: Assets/MyAssets/MyModels/Characters@Standing Death Left 01.fbx
+  artifactKey: Guid(24d9128ca6f8d47d6aee7f42c1ade8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/MyModels/Characters@Standing Death Left 01.fbx using Guid(24d9128ca6f8d47d6aee7f42c1ade8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7d37b5536bfdcaf699640916de82df5') in 0.732668 seconds 
+  Import took 0.762624 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.488288 seconds.
+  path: Assets/MyAssets/MyModels/mixamo.com.anim
+  artifactKey: Guid(1f05d521d8d3140e8bfb392983c4567d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/MyModels/mixamo.com.anim using Guid(1f05d521d8d3140e8bfb392983c4567d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0ed226416b16bba95e20017141fded1') in 0.071251 seconds 
+  Import took 0.082789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.488532 seconds.
+  path: Assets/MyAssets/MyModels/Death_Anim.anim
+  artifactKey: Guid(1f05d521d8d3140e8bfb392983c4567d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MyAssets/MyModels/Death_Anim.anim using Guid(1f05d521d8d3140e8bfb392983c4567d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6219eb5f2953a800dcb0e8ae8b88ecd2') in 0.009117 seconds 
+  Import took 0.015362 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005151 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-29 18:38:53.486 Unity[37700:5344666] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000295ea70 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Refreshing native plugins compatible for Editor in 1.36 ms, found 2 plugins.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.982 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2983ms)
+		BeginReloadAssembly (267ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (32ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (109ms)
+		EndReloadAssembly (2617ms)
+			LoadAssemblies (227ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (521ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (1423ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (271ms)
+				ProcessInitializeOnLoadAttributes (1102ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 344.7 MB.
+System memory in use after: 340.2 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4599.
+Total: 7.260375 ms (FindLiveObjects: 0.301208 ms CreateObjectMapping: 0.100667 ms MarkObjects: 4.064166 ms  DeleteObjects: 2.793167 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004637 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-29 18:41:08.263 Unity[37700:5344666] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000029018f0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.919 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2920ms)
+		BeginReloadAssembly (263ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (30ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (113ms)
+		EndReloadAssembly (2565ms)
+			LoadAssemblies (234ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (516ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (82ms)
+			SetupLoadedEditorAssemblies (1374ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (262ms)
+				ProcessInitializeOnLoadAttributes (1060ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 344.9 MB.
+System memory in use after: 340.4 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4601.
+Total: 5.534250 ms (FindLiveObjects: 0.194167 ms CreateObjectMapping: 0.096667 ms MarkObjects: 2.420042 ms  DeleteObjects: 2.822167 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004870 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-29 18:49:56.278 Unity[37700:5344666] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002908930 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.849 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2850ms)
+		BeginReloadAssembly (260ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (30ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (109ms)
+		EndReloadAssembly (2492ms)
+			LoadAssemblies (222ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (490ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (1358ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (266ms)
+				ProcessInitializeOnLoadAttributes (1041ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 345.1 MB.
+System memory in use after: 340.7 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4603.
+Total: 6.565250 ms (FindLiveObjects: 0.208125 ms CreateObjectMapping: 0.099875 ms MarkObjects: 3.444584 ms  DeleteObjects: 2.811792 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007272 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-29 18:54:01.013 Unity[37700:5344666] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000029090a0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Refreshing native plugins compatible for Editor in 5.21 ms, found 2 plugins.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.457 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3458ms)
+		BeginReloadAssembly (260ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (32ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (96ms)
+		EndReloadAssembly (3106ms)
+			LoadAssemblies (226ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (480ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (76ms)
+			SetupLoadedEditorAssemblies (1895ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (369ms)
+				ProcessInitializeOnLoadAttributes (1467ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 345.4 MB.
+System memory in use after: 340.9 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4605.
+Total: 7.013375 ms (FindLiveObjects: 0.251792 ms CreateObjectMapping: 0.102041 ms MarkObjects: 3.859375 ms  DeleteObjects: 2.798875 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006760 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-29 18:54:30.102 Unity[37700:5344666] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002900700 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Refreshing native plugins compatible for Editor in 1.33 ms, found 2 plugins.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.844 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2846ms)
+		BeginReloadAssembly (240ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (31ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (96ms)
+		EndReloadAssembly (2512ms)
+			LoadAssemblies (199ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (442ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (85ms)
+			SetupLoadedEditorAssemblies (1397ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (288ms)
+				ProcessInitializeOnLoadAttributes (1057ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 345.6 MB.
+System memory in use after: 341.2 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4607.
+Total: 5.458667 ms (FindLiveObjects: 0.228250 ms CreateObjectMapping: 0.100583 ms MarkObjects: 2.371875 ms  DeleteObjects: 2.756958 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008793 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-29 18:58:51.727 Unity[37700:5344666] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x60000291eed0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Refreshing native plugins compatible for Editor in 1.57 ms, found 2 plugins.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.088 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3090ms)
+		BeginReloadAssembly (282ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (33ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (111ms)
+		EndReloadAssembly (2717ms)
+			LoadAssemblies (256ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (461ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (1550ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (271ms)
+				ProcessInitializeOnLoadAttributes (1220ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (34ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 345.9 MB.
+System memory in use after: 341.5 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4609.
+Total: 6.415000 ms (FindLiveObjects: 0.276292 ms CreateObjectMapping: 0.110792 ms MarkObjects: 2.802417 ms  DeleteObjects: 3.223667 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005026 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-29 19:00:18.457 Unity[37700:5344666] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002904a10 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.066 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3068ms)
+		BeginReloadAssembly (262ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (32ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (108ms)
+		EndReloadAssembly (2713ms)
+			LoadAssemblies (249ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (529ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (81ms)
+			SetupLoadedEditorAssemblies (1457ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (282ms)
+				ProcessInitializeOnLoadAttributes (1123ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.90 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 346.1 MB.
+System memory in use after: 341.7 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4611.
+Total: 9.006666 ms (FindLiveObjects: 0.349375 ms CreateObjectMapping: 0.124833 ms MarkObjects: 5.526667 ms  DeleteObjects: 3.004625 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008606 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-29 19:00:54.180 Unity[37700:5344666] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002941ce0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Refreshing native plugins compatible for Editor in 1.40 ms, found 2 plugins.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.940 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2942ms)
+		BeginReloadAssembly (244ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (35ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (97ms)
+		EndReloadAssembly (2605ms)
+			LoadAssemblies (250ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (458ms)
 			ReleaseScriptCaches (2ms)
 			RebuildScriptCaches (76ms)
 			SetupLoadedEditorAssemblies (1441ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (1ms)
+				SetLoadedEditorAssemblies (2ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (292ms)
-				ProcessInitializeOnLoadAttributes (1094ms)
-				ProcessInitializeOnLoadMethodAttributes (39ms)
+				BeforeProcessingInitializeOnLoad (273ms)
+				ProcessInitializeOnLoadAttributes (1113ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (31ms)
+			AwakeInstancesAfterBackupRestoration (32ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.34 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 354.9 MB.
-System memory in use after: 350.5 MB.
+System memory in use before: 346.4 MB.
+System memory in use after: 341.9 MB.
 
-Unloading 70 unused Assets to reduce memory usage. Loaded Objects now: 4572.
-Total: 6.915667 ms (FindLiveObjects: 0.226625 ms CreateObjectMapping: 0.101334 ms MarkObjects: 4.045583 ms  DeleteObjects: 2.541083 ms)
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4613.
+Total: 10.926541 ms (FindLiveObjects: 4.175041 ms CreateObjectMapping: 0.115917 ms MarkObjects: 3.691083 ms  DeleteObjects: 2.943125 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -987,108 +939,108 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005250 seconds.
+Registered in 0.009862 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.37 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.32 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-2022-01-29 17:44:33.090 Unity[36846:5307788] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002c5fbf0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Refreshing native plugins compatible for Editor in 1.36 ms, found 2 plugins.
+2022-01-29 19:02:09.766 Unity[37700:5344666] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002941110 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Refreshing native plugins compatible for Editor in 1.43 ms, found 2 plugins.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.904 seconds
+- Completed reload, in  2.943 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2908ms)
-		BeginReloadAssembly (254ms)
+	ReloadAssembly (2945ms)
+		BeginReloadAssembly (269ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (33ms)
+			DisableScriptedObjects (60ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (104ms)
-		EndReloadAssembly (2562ms)
-			LoadAssemblies (213ms)
+			CreateAndSetChildDomain (93ms)
+		EndReloadAssembly (2573ms)
+			LoadAssemblies (217ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (558ms)
+			SetupTypeCache (447ms)
 			ReleaseScriptCaches (2ms)
 			RebuildScriptCaches (80ms)
-			SetupLoadedEditorAssemblies (1356ms)
+			SetupLoadedEditorAssemblies (1401ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (1ms)
+				SetLoadedEditorAssemblies (2ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (275ms)
-				ProcessInitializeOnLoadAttributes (1023ms)
-				ProcessInitializeOnLoadMethodAttributes (44ms)
+				BeforeProcessingInitializeOnLoad (270ms)
+				ProcessInitializeOnLoadAttributes (1065ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (42ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 346.6 MB.
+System memory in use after: 342.2 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4615.
+Total: 5.962208 ms (FindLiveObjects: 0.281667 ms CreateObjectMapping: 0.096916 ms MarkObjects: 2.490125 ms  DeleteObjects: 3.092375 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010224 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-29 19:02:55.457 Unity[37700:5344666] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002901030 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Refreshing native plugins compatible for Editor in 1.30 ms, found 2 plugins.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.830 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2831ms)
+		BeginReloadAssembly (258ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (29ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (109ms)
+		EndReloadAssembly (2484ms)
+			LoadAssemblies (222ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (429ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (1395ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (269ms)
+				ProcessInitializeOnLoadAttributes (1070ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (30ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 355.3 MB.
-System memory in use after: 350.8 MB.
-
-Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4574.
-Total: 5.655000 ms (FindLiveObjects: 0.259375 ms CreateObjectMapping: 0.101125 ms MarkObjects: 2.575541 ms  DeleteObjects: 2.717959 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010512 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.39 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2022-01-29 17:48:30.493 Unity[36846:5307788] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002c53410 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.902 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2903ms)
-		BeginReloadAssembly (274ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (33ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (115ms)
-		EndReloadAssembly (2540ms)
-			LoadAssemblies (224ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (443ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (77ms)
-			SetupLoadedEditorAssemblies (1426ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (292ms)
-				ProcessInitializeOnLoadAttributes (1077ms)
-				ProcessInitializeOnLoadMethodAttributes (43ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (31ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 355.5 MB.
-System memory in use after: 351.1 MB.
+System memory in use before: 346.9 MB.
+System memory in use after: 342.4 MB.
 
-Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4576.
-Total: 5.491709 ms (FindLiveObjects: 0.245083 ms CreateObjectMapping: 0.106709 ms MarkObjects: 2.493791 ms  DeleteObjects: 2.645292 ms)
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4617.
+Total: 5.551042 ms (FindLiveObjects: 0.222500 ms CreateObjectMapping: 0.099416 ms MarkObjects: 2.451375 ms  DeleteObjects: 2.776708 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -1103,153 +1055,95 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005328 seconds.
+Registered in 0.004911 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.64 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.29 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-2022-01-29 17:52:14.091 Unity[36846:5307788] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002c53950 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2022-01-29 19:04:22.097 Unity[37700:5344666] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002943870 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 Refreshing native plugins compatible for Editor in 1.40 ms, found 2 plugins.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.023 seconds
+- Completed reload, in  2.931 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3025ms)
-		BeginReloadAssembly (267ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (40ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (103ms)
-		EndReloadAssembly (2662ms)
-			LoadAssemblies (285ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (522ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (1404ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (288ms)
-				ProcessInitializeOnLoadAttributes (1062ms)
-				ProcessInitializeOnLoadMethodAttributes (40ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (40ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.24 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 355.8 MB.
-System memory in use after: 351.3 MB.
-
-Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4578.
-Total: 6.023000 ms (FindLiveObjects: 0.211250 ms CreateObjectMapping: 0.098458 ms MarkObjects: 2.957375 ms  DeleteObjects: 2.754875 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005047 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 2.12 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2022-01-29 17:54:13.918 Unity[36846:5307788] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002c6df80 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Refreshing native plugins compatible for Editor in 1.33 ms, found 2 plugins.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.056 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3057ms)
-		BeginReloadAssembly (287ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (38ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (111ms)
-		EndReloadAssembly (2675ms)
-			LoadAssemblies (216ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (558ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (1442ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (279ms)
-				ProcessInitializeOnLoadAttributes (1109ms)
-				ProcessInitializeOnLoadMethodAttributes (39ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (31ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.36 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 356.1 MB.
-System memory in use after: 351.6 MB.
-
-Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4580.
-Total: 5.615834 ms (FindLiveObjects: 0.217250 ms CreateObjectMapping: 0.099084 ms MarkObjects: 2.436000 ms  DeleteObjects: 2.862417 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004676 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.65 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2022-01-29 17:58:18.459 Unity[36846:5307788] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002c6e680 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Refreshing native plugins compatible for Editor in 1.55 ms, found 2 plugins.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.985 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2991ms)
-		BeginReloadAssembly (255ms)
+	ReloadAssembly (2933ms)
+		BeginReloadAssembly (252ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (34ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (98ms)
-		EndReloadAssembly (2640ms)
-			LoadAssemblies (227ms)
+			CreateAndSetChildDomain (101ms)
+		EndReloadAssembly (2587ms)
+			LoadAssemblies (224ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (496ms)
-			ReleaseScriptCaches (6ms)
-			RebuildScriptCaches (78ms)
-			SetupLoadedEditorAssemblies (1413ms)
+			SetupTypeCache (526ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (76ms)
+			SetupLoadedEditorAssemblies (1397ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (290ms)
-				ProcessInitializeOnLoadAttributes (1070ms)
-				ProcessInitializeOnLoadMethodAttributes (39ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (265ms)
+				ProcessInitializeOnLoadAttributes (1084ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (30ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 347.1 MB.
+System memory in use after: 342.7 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4619.
+Total: 5.535292 ms (FindLiveObjects: 0.206375 ms CreateObjectMapping: 0.098375 ms MarkObjects: 2.435875 ms  DeleteObjects: 2.793584 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004281 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-29 19:06:29.595 Unity[37700:5344666] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002943870 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Refreshing native plugins compatible for Editor in 1.38 ms, found 2 plugins.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.991 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2993ms)
+		BeginReloadAssembly (258ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (31ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (111ms)
+		EndReloadAssembly (2631ms)
+			LoadAssemblies (267ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (525ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (71ms)
+			SetupLoadedEditorAssemblies (1408ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (274ms)
+				ProcessInitializeOnLoadAttributes (1080ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -1258,11 +1152,11 @@ Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 356.3 MB.
-System memory in use after: 351.8 MB.
+System memory in use before: 347.4 MB.
+System memory in use after: 342.9 MB.
 
-Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4582.
-Total: 9.091917 ms (FindLiveObjects: 0.271250 ms CreateObjectMapping: 0.105375 ms MarkObjects: 5.515834 ms  DeleteObjects: 3.197500 ms)
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4621.
+Total: 5.532333 ms (FindLiveObjects: 0.186708 ms CreateObjectMapping: 0.097500 ms MarkObjects: 2.426792 ms  DeleteObjects: 2.820333 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -1277,116 +1171,50 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005105 seconds.
+Registered in 0.005117 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.69 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.65 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-2022-01-29 18:08:01.144 Unity[36846:5307788] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002c3eca0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Refreshing native plugins compatible for Editor in 1.38 ms, found 2 plugins.
+2022-01-29 19:08:08.180 Unity[37700:5344666] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002900b60 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Refreshing native plugins compatible for Editor in 1.33 ms, found 2 plugins.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.027 seconds
+- Completed reload, in  2.949 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3034ms)
-		BeginReloadAssembly (283ms)
+	ReloadAssembly (2956ms)
+		BeginReloadAssembly (248ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (39ms)
+			DisableScriptedObjects (30ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (116ms)
-		EndReloadAssembly (2656ms)
-			LoadAssemblies (218ms)
+			CreateAndSetChildDomain (105ms)
+		EndReloadAssembly (2611ms)
+			LoadAssemblies (209ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (495ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (1466ms)
+			SetupTypeCache (561ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (1401ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (294ms)
-				ProcessInitializeOnLoadAttributes (1120ms)
-				ProcessInitializeOnLoadMethodAttributes (36ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (30ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 356.5 MB.
-System memory in use after: 352.1 MB.
-
-Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4584.
-Total: 7.089500 ms (FindLiveObjects: 0.205292 ms CreateObjectMapping: 0.100083 ms MarkObjects: 3.863000 ms  DeleteObjects: 2.919667 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1813.134269 seconds.
-  path: Assets/MyAssets/MySounds/Explosion2.mp3
-  artifactKey: Guid(417d8227956094d5396c53bf233f6cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/MySounds/Explosion2.mp3 using Guid(417d8227956094d5396c53bf233f6cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '345921d2fd7feb632e080111e8a35c13') in 0.143596 seconds 
-  Import took 0.149657 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005033 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.48 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-2022-01-29 18:12:40.891 Unity[36846:5307788] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002c6e4c0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-Refreshing native plugins compatible for Editor in 1.41 ms, found 2 plugins.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.913 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2914ms)
-		BeginReloadAssembly (269ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (39ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (109ms)
-		EndReloadAssembly (2553ms)
-			LoadAssemblies (219ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (453ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (1398ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (274ms)
-				ProcessInitializeOnLoadAttributes (1069ms)
+				BeforeProcessingInitializeOnLoad (279ms)
+				ProcessInitializeOnLoadAttributes (1070ms)
 				ProcessInitializeOnLoadMethodAttributes (38ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (30ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.32 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 356.8 MB.
-System memory in use after: 352.4 MB.
+System memory in use before: 347.7 MB.
+System memory in use after: 343.2 MB.
 
-Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4587.
-Total: 7.191333 ms (FindLiveObjects: 0.189166 ms CreateObjectMapping: 0.106417 ms MarkObjects: 3.990459 ms  DeleteObjects: 2.904125 ms)
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4623.
+Total: 7.310917 ms (FindLiveObjects: 0.263167 ms CreateObjectMapping: 0.115791 ms MarkObjects: 2.774000 ms  DeleteObjects: 4.156875 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -1399,27 +1227,60 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 416.399092 seconds.
-  path: Assets/MyAssets/MyAnimations/LoopableLoss.anim
-  artifactKey: Guid(57494924e08c04f9b9fb52199b4fdfa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/MyAnimations/LoopableLoss.anim using Guid(57494924e08c04f9b9fb52199b4fdfa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da2069efa223879d8e61bff18d04e908') in 0.074702 seconds 
-  Import took 0.110565 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004444 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+2022-01-29 19:10:55.268 Unity[37700:5344666] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x600002952ed0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+Refreshing native plugins compatible for Editor in 1.30 ms, found 2 plugins.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.975 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2978ms)
+		BeginReloadAssembly (244ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (30ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (98ms)
+		EndReloadAssembly (2638ms)
+			LoadAssemblies (249ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (514ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (1422ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (267ms)
+				ProcessInitializeOnLoadAttributes (1095ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (35ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4018 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 347.9 MB.
+System memory in use after: 343.4 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 1.944763 seconds.
-  path: Assets/MyAssets/MyAnimations/Display_Loss.anim
-  artifactKey: Guid(4a4610d4ccba04d46b04f5b8bb88d6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/MyAnimations/Display_Loss.anim using Guid(4a4610d4ccba04d46b04f5b8bb88d6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ede434f6383ea39b29b7f5c365f5e1f2') in 0.004909 seconds 
-  Import took 0.012897 seconds .
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4625.
+Total: 5.964625 ms (FindLiveObjects: 0.267417 ms CreateObjectMapping: 0.112959 ms MarkObjects: 2.573583 ms  DeleteObjects: 3.008875 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 1.769028 seconds.
-  path: Assets/MyAssets/MyAnimations/Display_Loss.anim
-  artifactKey: Guid(4a4610d4ccba04d46b04f5b8bb88d6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/MyAnimations/Display_Loss.anim using Guid(4a4610d4ccba04d46b04f5b8bb88d6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a55aaac61caff1d42450d2bca46d249') in 0.002557 seconds 
-  Import took 0.008192 seconds .
-
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

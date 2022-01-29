@@ -106,9 +106,27 @@ public class MyAlertCanvas : MonoBehaviour
         myAnim.Play("Display_Alert_Anim");
     }
 
+    public void Play_Btn()
+    {
+        myAnim.Play("Display_Level_Selection_Panel");
+    }
+
+    public void Play_Tutorial()
+    {
+        PlayerPrefs.DeleteKey("tutorial");
+        MyManager.levelIndex = 0;
+        MyManager.isFirstTime = true;
+        Retry();
+    }
+
+    public void Return_From_LevelSelection()
+    {
+        myAnim.Play("Hide_Level_Selection_Panel");
+    }
+
     public void Retry()
     {
-        StartCoroutine(LoadScene(SceneManager.GetActiveScene().path));
+        StartCoroutine(LoadScene("MainGame"));
     }
 
     public void Hover_Btn(GameObject eventData)
@@ -132,6 +150,8 @@ public class MyAlertCanvas : MonoBehaviour
     {
         myAnim.Play("Display_Victory");
         isGameOver = true;
+
+        PlayerPrefs.SetInt("ReachedLevel" + "_" + MyManager.levelIndex,1);
 
         if (sfxOn)
         myAudioSource.PlayOneShot(winSFX);
