@@ -60,7 +60,7 @@ public class MyPlayer : MonoBehaviour
             Destroy(Instantiate(explosionEffect, transform.position, Quaternion.identity), 3);
             Instantiate(fireEffect, transform.position, Quaternion.identity);
             allThePlaceMat.color = Color.black;
-            transform.Rotate(Vector3.forward * 90);
+            man.Lose();
             gameObject.SetActive(false);
         }
     }

@@ -50,7 +50,7 @@ public class MyManager : MonoBehaviour
     public static int levelIndex = 0;
 
     public static bool isGameRunning = true;
-    public static bool isFirstTime = true;
+    public static bool isFirstTime = false;
     public static bool isTutorialRunning = false;
 
     //Tutorial Stuff
@@ -81,6 +81,8 @@ public class MyManager : MonoBehaviour
 
     void Start()
     {
+        isGameRunning = true;
+
         if (isFirstTime)
         {
             isGameRunning = false;
@@ -105,6 +107,7 @@ public class MyManager : MonoBehaviour
         {
             ExtractMomentsFromFile();
             StartCoroutine(Start_Game());
+
             myAudioSource.clip = musicLevels[levelIndex];
             myAudioSource.PlayOneShot(musicLevels[levelIndex]);
             myAudioSource.loop = true;
@@ -263,8 +266,6 @@ public class MyManager : MonoBehaviour
                 if (canSawpObstacle)
                 {
 
-                    characterAnim.Play("Pick_Up_Anim", -1, 0);
-
                     if (Random.Range(0, 2) % 2 == 0)
                         Spawn_Row_One_Obstacle();
                     else
@@ -285,7 +286,14 @@ public class MyManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         alertCanvas.Win();
+        isGameRunning = false;
         isWin = true;
+    }
+
+    public void Lose()
+    {
+        alertCanvas.Lose();
+        isGameRunning = false;
     }
 
     void Spawn_Blaka()
@@ -313,6 +321,9 @@ public class MyManager : MonoBehaviour
 
     void Spawn_Row_One_Obstacle()
     {
+
+        characterAnim.Play("Pick_Up_Anim", -1, 0);
+
         byte randomSideA = (byte)Random.Range(0, spawnPositions.Length);
         byte randomSideB;
         byte randomElementIndex = (byte)Random.Range(0, rowOneObstacles.Length);
@@ -340,6 +351,9 @@ public class MyManager : MonoBehaviour
 
     void Spawn_Row_Two_Obstacle()
     {
+
+        characterAnim.Play("Pick_Up_Anim", -1, 0);
+
         byte randomSide = (byte)(Random.Range(0, 2) % 2 == 0 ? 0 : 2);
         byte randomElementIndex = (byte)Random.Range(0, rowTwoObstacles.Length);
 

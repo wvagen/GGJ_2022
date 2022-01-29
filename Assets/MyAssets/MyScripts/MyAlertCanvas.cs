@@ -11,12 +11,17 @@ public class MyAlertCanvas : MonoBehaviour
     public Animator myAnim;
     public Text alertTitleTxt, alertMsgTxt;
 
+    public Text loserTxt;
+
     public AudioSource myAudioSource;
     public AudioSource musicPlayer;
 
     public AudioClip infoPanelAudioClip,hoverBtnSFX, musicSfxSwitch;
 
     public AudioClip winSFX;
+    public AudioClip lossSFX;
+
+    public string[] loserStrings;
 
     public Image musicImg, sfxImg;
 
@@ -26,6 +31,8 @@ public class MyAlertCanvas : MonoBehaviour
     public static bool sfxOn = true;
 
     GameObject hoveredGO;
+
+    static int lostTxtIndex = 0;
 
     private void Start()
     {
@@ -72,6 +79,25 @@ public class MyAlertCanvas : MonoBehaviour
 
         if(sfxOn)
         myAudioSource.PlayOneShot(winSFX);
+    }
+
+    public void Lose()
+    {
+        myAnim.Play("Display_Loss");
+        musicPlayer.pitch = 0.5f;
+
+        if (sfxOn)
+            myAudioSource.PlayOneShot(lossSFX);
+
+        if (lostTxtIndex < loserStrings.Length)
+        {
+            loserTxt.text = loserStrings[lostTxtIndex];
+            lostTxtIndex++;
+        }
+        else
+        {
+            loserTxt.text = loserStrings[Random.Range(0, loserStrings.Length)];
+        }
     }
 
     void SoundsStats()
