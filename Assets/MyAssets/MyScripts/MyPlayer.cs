@@ -10,6 +10,8 @@ public class MyPlayer : MonoBehaviour
     public GameObject explosionEffect;
     public GameObject fireEffect;
 
+    public GameObject transitionEffect;
+
     public Material allThePlaceMat;
 
     int playerPosIndex = 0;
@@ -41,11 +43,13 @@ public class MyPlayer : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.RightArrow) && playerPosIndex < 1)
             {
+                Destroy(Instantiate(transitionEffect, player.transform.position, Quaternion.identity), 3);
                 player.transform.position += Vector3.left * man.SNAP_HORIZONTAL;
                 playerPosIndex++;
             }
             else if (Input.GetKeyDown(KeyCode.LeftArrow) && playerPosIndex > -1)
             {
+                Destroy(Instantiate(transitionEffect, player.transform.position, Quaternion.identity), 3);
                 player.transform.position += Vector3.right * man.SNAP_HORIZONTAL;
                 playerPosIndex--;
             }

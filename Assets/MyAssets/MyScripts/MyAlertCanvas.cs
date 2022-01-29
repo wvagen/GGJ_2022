@@ -38,9 +38,12 @@ public class MyAlertCanvas : MonoBehaviour
 
     bool isGameOver = false;
 
+    public Material allThePlaceMat;
+
     private void Start()
     {
         SoundsStats();
+        allThePlaceMat.color = Color.white;
         Time.timeScale = 1;
     }
 
@@ -127,6 +130,12 @@ public class MyAlertCanvas : MonoBehaviour
     public void Retry()
     {
         StartCoroutine(LoadScene("MainGame"));
+    }
+
+    public void HomeBtn()
+    {
+        myMan.
+        StartCoroutine(LoadScene("MainMenu"));
     }
 
     public void Hover_Btn(GameObject eventData)

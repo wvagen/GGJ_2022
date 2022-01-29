@@ -47,12 +47,9 @@ public class MyLevelBtn : MonoBehaviour
     {
         if (isLevelReached)
         {
+            if (myLevelIndex == 0) MyManager.isFirstTime = true;
             MyManager.levelIndex = myLevelIndex;
             alertCanvas.Retry();
-        }
-        else
-        {
-            alertCanvas.Display_Alert("Info", "You must finish the previous levels first");
         }
     }
 

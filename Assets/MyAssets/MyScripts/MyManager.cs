@@ -52,7 +52,7 @@ public class MyManager : MonoBehaviour
     public static int levelIndex = 0;
 
     public static bool isGameRunning = true;
-    public static bool isFirstTime = true;
+    public static bool isFirstTime = false;
     public static bool isTutorialRunning = false;
 
     //Tutorial Stuff
