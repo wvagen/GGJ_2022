@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using UnityEngine.SceneManagement;
+using UnityEngine.Playables;
 
 public class MyManager : MonoBehaviour
 {
@@ -31,6 +32,8 @@ public class MyManager : MonoBehaviour
     public Vector3 camOffset2D;
     public Vector3 camOffset3D;
 
+    public PlayableDirector director;
+
     public float tapisRotationSpeed = 50;
     public float SNAP_HORIZONTAL = 0.25f;
 
@@ -38,6 +41,7 @@ public class MyManager : MonoBehaviour
     public List<float> timeMomentsBlaka = new List<float>();
 
     public static bool isGameRunning = true;
+    public static bool isFirstTime = true;
 
     int timeMomentObstacleIndex = 0;
     int timeMomentBlakaIndex = 0;
@@ -52,10 +56,35 @@ public class MyManager : MonoBehaviour
 
     const float MARGIN_OF_TWO_ROWS_OBST = 0.16f;
 
+    private void Awake()
+    {
+        if (isFirstTime)
+        {
+            isGameRunning = false;
+            director.stopped += TimeLine_Stopped;
+            director.Play();
+        }
+    }
+
     void Start()
     {
-        ExtractMomentsFromFile();
-        StartCoroutine(Start_Game());
+        Start_Stuff();
+    }
+
+    void Start_Stuff()
+    {
+        if (isGameRunning)
+        {
+            ExtractMomentsFromFile();
+            StartCoroutine(Start_Game());
+            cam3D.SetActive(true);
+        }
+    }
+
+    void TimeLine_Stopped(PlayableDirector obj)
+    {
+        isGameRunning = true;
+        Start_Stuff();
     }
 
     private void Update()
@@ -105,7 +134,8 @@ public class MyManager : MonoBehaviour
 
     void Spawn_Obstacle()
     {
-        if (isGameRunning && timeMomentObstacleIndex < timeMomentsObstacles.Count && !isWin) {
+        if (isGameRunning && timeMomentObstacleIndex < timeMomentsObstacles.Count && !isWin)
+        {
             if (customizedTime > timeMomentsObstacles[timeMomentObstacleIndex])
             {
                 //Spawn Obstacles Behaviour here
@@ -158,9 +188,9 @@ public class MyManager : MonoBehaviour
 
     void Spawn_Row_One_Obstacle()
     {
-        byte randomSideA = (byte) Random.Range(0, spawnPositions.Length);
+        byte randomSideA = (byte)Random.Range(0, spawnPositions.Length);
         byte randomSideB;
-        byte randomElementIndex = (byte) Random.Range(0, rowOneObstacles.Length);
+        byte randomElementIndex = (byte)Random.Range(0, rowOneObstacles.Length);
 
         do
         {
@@ -171,7 +201,7 @@ public class MyManager : MonoBehaviour
         {
             MyElement element = Instantiate(rowOneObstacles[randomElementIndex],
                 parent: spawnPositions[i % 2 == 0 ? randomSideA : randomSideB]).GetComponent<MyElement>();
-            element.Set_Me_Up(elementSpeed,0);
+            element.Set_Me_Up(elementSpeed, 0);
         }
 
         GameObject obj = Instantiate(rowOneObstacles[randomElementIndex],
@@ -185,12 +215,12 @@ public class MyManager : MonoBehaviour
 
     void Spawn_Row_Two_Obstacle()
     {
-        byte randomSide = (byte) (Random.Range(0, 2) % 2 == 0 ? 0 : 2);
+        byte randomSide = (byte)(Random.Range(0, 2) % 2 == 0 ? 0 : 2);
         byte randomElementIndex = (byte)Random.Range(0, rowTwoObstacles.Length);
 
-            MyElement element = Instantiate(rowTwoObstacles[randomElementIndex],
-                parent: spawnPositions[randomSide]).GetComponent<MyElement>();
-            element.Set_Me_Up(elementSpeed, randomSide == 0 ? -MARGIN_OF_TWO_ROWS_OBST : MARGIN_OF_TWO_ROWS_OBST);
+        MyElement element = Instantiate(rowTwoObstacles[randomElementIndex],
+            parent: spawnPositions[randomSide]).GetComponent<MyElement>();
+        element.Set_Me_Up(elementSpeed, randomSide == 0 ? -MARGIN_OF_TWO_ROWS_OBST : MARGIN_OF_TWO_ROWS_OBST);
 
         GameObject obj = Instantiate(rowTwoObstacles[randomElementIndex],
                 parent: rightHandOfCharacter);
@@ -204,15 +234,12 @@ public class MyManager : MonoBehaviour
     {
         MyElement element = Instantiate(nextStoreBlaka,
                 parent: spawnPositions[1]).GetComponent<MyElement>();
-        element.Set_Me_Up(elementSpeed,0);
+        element.Set_Me_Up(elementSpeed, 0);
     }
 
     void Rotate_Tapis_Texture_Speed()
     {
-        if (isGameRunning)
-        {
-            tapisRendererMat.material.SetTextureOffset("_MainTex", Vector2.left * tapisRotationSpeed * Time.deltaTime);
-        }
+      tapisRendererMat.material.SetTextureOffset("_MainTex", Vector2.left * tapisRotationSpeed * Time.deltaTime);
     }
 
     public void Switch_2D_3D()
