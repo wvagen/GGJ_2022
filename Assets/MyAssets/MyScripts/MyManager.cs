@@ -266,7 +266,7 @@ public class MyManager : MonoBehaviour
 
     IEnumerator Start_Game()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2f);
         myAudioSource_3D.enabled = true;
         myAudioSource_2D.enabled = true;
     }
@@ -324,9 +324,12 @@ public class MyManager : MonoBehaviour
     IEnumerator Win_Behavior()
     {
         yield return new WaitForSeconds(2);
-        alertCanvas.Win();
-        isGameRunning = false;
-        isWin = true;
+        if (isGameRunning)
+        {
+            alertCanvas.Win();
+            isGameRunning = false;
+            isWin = true;
+        }
     }
 
     public void Lose()
