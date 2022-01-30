@@ -75,6 +75,11 @@ public class MyPlayer : MonoBehaviour
             Destroy(other.transform.parent.gameObject);
             man.Switch_2D_3D();
         }
+        if (other.gameObject.tag == "letsgo")
+        {
+            Destroy(other.transform.parent.gameObject);
+            man.isStartTheDrop = true;
+        }
     }
 
 }

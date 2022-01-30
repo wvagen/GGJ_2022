@@ -14,6 +14,7 @@ public class MyManager : MonoBehaviour
     public GameObject[] rowTwoObstacles;
 
     public GameObject nextStoreBlaka;
+    public GameObject letsgo;
 
     public GameObject theCriminal;
 
@@ -28,11 +29,11 @@ public class MyManager : MonoBehaviour
 
     public Animator characterAnim, caissiereAnim;
 
-    public AudioSource myAudioSource;
+    public AudioSource myAudioSource_3D, myAudioSource_2D;
 
     public Renderer tapisRendererMat;
 
-    public AudioClip[] musicLevels;
+    public AudioClip[] musicLevels_3D, musicLevels_2D;
 
     public TextAsset[] recordedObstaclesMomentsTxtFiles;
     public TextAsset[] recordedBlakaMomentsTxtFiles;
@@ -82,6 +83,10 @@ public class MyManager : MonoBehaviour
 
     bool framesSkippedIntro = false;
 
+    public float specialPhaseTimer = 0;
+
+    public bool isStartTheDrop = false;
+
     Coroutine tutoCor;
 
     void Start()
@@ -92,6 +97,10 @@ public class MyManager : MonoBehaviour
         {
             isGameRunning = true;
             panel2D_3D.SetActive(true);
+            myAudioSource_2D.mute = true;
+
+            if (levelIndex == 1) alertCanvas.Display_Alert("Tutorial", "Music sometimes splitted to two: Vocals in 2D and Instruments in 3D (Duality baby)");
+
             if (isFirstTime)
             {
                 isGameRunning = false;
@@ -118,9 +127,14 @@ public class MyManager : MonoBehaviour
             ExtractMomentsFromFile();
             StartCoroutine(Start_Game());
 
-            myAudioSource.clip = musicLevels[levelIndex];
-            myAudioSource.PlayOneShot(musicLevels[levelIndex]);
-            myAudioSource.loop = true;
+            myAudioSource_3D.clip = musicLevels_3D[levelIndex];
+            myAudioSource_3D.PlayOneShot(musicLevels_3D[levelIndex]);
+
+            myAudioSource_2D.clip = musicLevels_2D[levelIndex];
+            myAudioSource_2D.PlayOneShot(musicLevels_2D[levelIndex]);
+
+            myAudioSource_3D.loop = true;
+            myAudioSource_2D.loop = true;
 
             cam3D.SetActive(true);
             theCriminal.SetActive(false);
@@ -226,6 +240,12 @@ public class MyManager : MonoBehaviour
             customizedTime += Time.deltaTime;
         }
 
+        if(levelIndex == 1 && customizedTime >= specialPhaseTimer)
+        {
+            specialPhaseTimer = 10000000;
+            Spawn_LetsGo();
+        }
+
         if (framesSkippedIntro)
         {
             framesSkippedIntro = false;
@@ -236,12 +256,19 @@ public class MyManager : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+
+        if (isStartTheDrop)
+        {
+            myAudioSource_2D.mute = false;
+            myAudioSource_3D.mute = false;
+        }
     }
 
     IEnumerator Start_Game()
     {
         yield return new WaitForSeconds(1.5f);
-        myAudioSource.enabled = true;
+        myAudioSource_3D.enabled = true;
+        myAudioSource_2D.enabled = true;
     }
 
     void ExtractMomentsFromFile()
@@ -309,13 +336,16 @@ public class MyManager : MonoBehaviour
         characterAnim.Play("Death_Anim");
         caissiereAnim.Play("Death_Anim");
         isGameRunning = false;
+
+        myAudioSource_2D.pitch = 0.5f;
+        myAudioSource_3D.pitch = 0.5f;
     }
 
     void Spawn_Blaka()
     {
         if (isGameRunning && !isWin)
         {
-            if (customizedTime > timeMomentsBlaka[timeMomentBlakaIndex])
+            if (timeMomentBlakaIndex < timeMomentsBlaka.Count && customizedTime > timeMomentsBlaka[timeMomentBlakaIndex])
             {
                 //Spawn Blaka Behaviour here
 
@@ -384,6 +414,13 @@ public class MyManager : MonoBehaviour
         Destroy(obj, 0.5f);
     }
 
+    void Spawn_LetsGo()
+    {
+        MyElement element = Instantiate(letsgo,
+                parent: spawnPositions[1]).GetComponent<MyElement>();
+        element.Set_Me_Up(elementSpeed, 0);
+    }
+
     void Spawn_Balka()
     {
         MyElement element = Instantiate(nextStoreBlaka,
@@ -410,6 +447,9 @@ public class MyManager : MonoBehaviour
         StartCoroutine(Switch_CAMS());
 
         alertCanvas.myAnim.SetBool("is3D", isSwitchingTo3D);
+        myAudioSource_3D.mute = !isSwitchingTo3D;
+        myAudioSource_2D.mute = isSwitchingTo3D;
+
         isSwitchingTo3D = !isSwitchingTo3D;
     }
 

@@ -56,10 +56,17 @@ public class MyAlertCanvas : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                if (Time.timeScale > 0)
-                    Pause_Btn();
+                if (SceneManager.GetActiveScene().name == "MainGame")
+                {
+                    if (Time.timeScale > 0)
+                        Pause_Btn();
+                    else
+                        Resume();
+                }
                 else
-                    Resume();
+                {
+                    Application.Quit();
+                }
             }
         }
 
@@ -183,7 +190,6 @@ public class MyAlertCanvas : MonoBehaviour
     public void Lose()
     {
         myAnim.Play("Display_Loss");
-        musicPlayer.pitch = 0.5f;
         isGameOver = true;
 
         if (sfxOn)

@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - Obstacle
   - Switch_2D_3D
+  - letsgo
   layers:
   - Default
   - TransparentFX
