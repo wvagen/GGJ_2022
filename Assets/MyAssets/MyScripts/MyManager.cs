@@ -86,17 +86,22 @@ public class MyManager : MonoBehaviour
 
     void Start()
     {
-        isGameRunning = true;
-        panel2D_3D.SetActive(true);
-        if (isFirstTime)
-        {
-            isGameRunning = false;
-            director.Play();
-            StartCoroutine(Skip_Frame());
-        }
+
+        if (levelIndex >= recordedBlakaMomentsTxtFiles.Length) SceneManager.LoadScene("MoreLevelsSoon");
         else
         {
-            Start_Stuff();
+            isGameRunning = true;
+            panel2D_3D.SetActive(true);
+            if (isFirstTime)
+            {
+                isGameRunning = false;
+                director.Play();
+                StartCoroutine(Skip_Frame());
+            }
+            else
+            {
+                Start_Stuff();
+            }
         }
     }
 

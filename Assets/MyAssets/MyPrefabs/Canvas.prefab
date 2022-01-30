@@ -2372,6 +2372,8 @@ MonoBehaviour:
   musicSfxSwitch: {fileID: 8300000, guid: 843cfac969de8c24eb6f053c56487d8f, type: 3}
   winSFX: {fileID: 8300000, guid: 1195bc7667e5c4a3693c41764cfd0dc6, type: 3}
   lossSFX: {fileID: 8300000, guid: b9c04022809f748cf90fd97cbebec9c2, type: 3}
+  storeInGameLogo: {fileID: 0}
+  is3D2DPanel: {fileID: 0}
   loserStrings:
   - My young brother aged 5 did it first time
   - Are you playing with your foot fingers ?
@@ -7706,7 +7708,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6734496701045189865}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6903566468192886844}
+        m_TargetAssemblyTypeName: MyAlertCanvas, Assembly-CSharp
+        m_MethodName: Next_Btn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &9204421771464320336
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -21,6 +21,7 @@ public class MyAlertCanvas : MonoBehaviour
     public AudioClip lossSFX;
 
     public GameObject storeInGameLogo;
+    public GameObject is3D2DPanel;
 
     public string[] loserStrings;
 
@@ -61,8 +62,13 @@ public class MyAlertCanvas : MonoBehaviour
                     Resume();
             }
         }
+
     }
 
+    private void LateUpdate()
+    {
+        if (SceneManager.GetActiveScene().name == "MainMenu") is3D2DPanel.SetActive(false);
+    }
 
     IEnumerator LoadScene(string sceneName_Path)
     {
@@ -114,6 +120,12 @@ public class MyAlertCanvas : MonoBehaviour
     public void Play_Btn()
     {
         myAnim.Play("Display_Level_Selection_Panel");
+    }
+
+    public void Next_Btn()
+    {
+        MyManager.levelIndex++;
+        Retry();
     }
 
     public void Play_Tutorial()

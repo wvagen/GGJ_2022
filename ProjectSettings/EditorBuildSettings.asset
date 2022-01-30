@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MyAssets/MyScenes/MainGame.unity
     guid: ecf297cba2d1c4b659fb5692ef66972e
+  - enabled: 1
+    path: Assets/MyAssets/MyScenes/MoreLevelsSoon.unity
+    guid: bed9955ee13c2412caa3ed8e5e5a226c
   m_configObjects: {}
