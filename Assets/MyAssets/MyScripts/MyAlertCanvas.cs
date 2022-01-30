@@ -20,6 +20,8 @@ public class MyAlertCanvas : MonoBehaviour
     public AudioClip winSFX;
     public AudioClip lossSFX;
 
+    public GameObject storeInGameLogo;
+
     public string[] loserStrings;
 
     public Image musicImg, sfxImg;

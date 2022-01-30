@@ -49,6 +49,7 @@ public class MyLevelBtn : MonoBehaviour
         {
             if (myLevelIndex == 0) MyManager.isFirstTime = true;
             MyManager.levelIndex = myLevelIndex;
+            alertCanvas.storeInGameLogo.SetActive(true);
             alertCanvas.Retry();
         }
     }
