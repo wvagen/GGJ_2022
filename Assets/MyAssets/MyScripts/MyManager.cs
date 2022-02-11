@@ -274,22 +274,11 @@ public class MyManager : MonoBehaviour
     void ExtractMomentsFromFile()
     {
         StreamReader reader = new StreamReader(new MemoryStream(recordedObstaclesMomentsTxtFiles[levelIndex].bytes));
-        string line = "";
-        do
-        {
-            line = reader.ReadLine();
-            if (line != null)
-                timeMomentsObstacles.Add(float.Parse(line));
-        } while (line != null);
-
-        reader = new StreamReader(new MemoryStream(recordedBlakaMomentsTxtFiles[levelIndex].bytes));
-        line = "";
-        do
-        {
-            line = reader.ReadLine();
-            if (line != null)
-                timeMomentsBlaka.Add(float.Parse(line));
-        } while (line != null);
+         var fileData : String  = System.IO.File.ReadAllText(path)
+        var lines : String[] = fileData.Split("\n"[0]);
+     var lineData : String[] = (lines[0].Trim()).Split(","[0]);
+     var x : float;
+     float.TryParse(lineData[0], x);
 
     }
 
